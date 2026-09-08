@@ -1,0 +1,791 @@
+export const lessonContent = {
+  1: { // Sistema Financeiro Nacional
+    lessons: [
+      {
+        title: 'Introdução ao SFN',
+        content: `O Sistema Financeiro Nacional (SFN) abrange três segmentos principais:
+
+1. **Moeda, Crédito, Capitais e Câmbio**
+   - Mercado monetário: fornece papel-moeda e moeda escritural
+   - Mercado de crédito: financia consumo e empresas
+   - Mercado de capitais: permite captação de recursos e compartilhamento de ganhos/riscos
+   - Mercado de câmbio: permite compra e venda de moedas estrangeiras
+
+2. **Seguros Privados**
+   - Mercado de seguros: proteção contra riscos
+   - Previdência complementar aberta
+   - Contratos de capitalização
+
+3. **Previdência Fechada**
+   - Fundos de pensão
+   - Planos para funcionários de empresas`,
+        difficulty: 'beginner'
+      },
+      {
+        title: 'Órgãos Normativos e Supervisores',
+        content: `**Órgãos Normativos:**
+
+1. **CMN - Conselho Monetário Nacional**
+   - Principal órgão normativo
+   - Formula política de moeda e crédito
+   - Composto por: Ministro da Fazenda (Presidente), Ministro do Planejamento e Presidente do Banco Central
+   - Emite Resoluções CMN
+
+2. **CNSP - Conselho Nacional de Seguros Privados**
+   - Regulamenta seguros privados
+   - Fixa diretrizes de operações
+
+3. **CNPC - Conselho Nacional de Previdência Complementar**
+   - Regula previdência fechada
+
+**Órgãos Supervisores:**
+- **BCB** (Banco Central do Brasil)
+- **CVM** (Comissão de Valores Mobiliários)
+- **SUSEP** (Superintendência de Seguros Privados)
+- **Previc** (Superintendência Nacional de Previdência Complementar)`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Banco Central do Brasil',
+        content: `**Missão:**
+"Garantir a estabilidade do poder de compra da moeda, zelar por um sistema financeiro sólido, eficiente e competitivo, e fomentar o bem-estar econômico da sociedade"
+
+**Principais Funções:**
+1. Manter inflação baixa e estável
+2. Assegurar que o SFN seja sólido e eficiente
+3. Deter reservas internacionais do País
+4. Ser banco dos bancos
+5. Ser emissor de moeda
+
+**Estrutura:**
+- Diretoria Colegiada com 9 membros (um deles Presidente)
+- Indicados e nomeados pelo Presidente da República
+- Aprovados pelo Senado Federal
+- Mandatos de 4 anos
+
+**Autonomia:**
+- Lei Complementar 179/2021 estabeleceu autonomia
+- Ausência de vinculação a Ministério
+- Autonomia técnica, operacional, administrativa e financeira`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Hierarquia das Normas',
+        content: `**Níveis hierárquicos das normas:**
+
+1. **Resoluções CMN**
+   - Traduzem decisões do Conselho Monetário
+   - Assinadas pelo Presidente do Banco Central
+   - Aplicam-se a todas as instituições do SFN
+
+2. **Resoluções BCB**
+   - Traduzem decisões da Diretoria Colegiada
+   - Regulamentam decisões do CMN
+   - Mais específicas que resoluções CMN
+
+3. **Instruções Normativas**
+   - Regulamentam as Resoluções BCB
+   - Maior nível de detalhe
+
+4. **Portarias BCB**
+   - Esclarecem dúvidas
+   - Prestam informações operacionais
+   - Menor hierarquia
+
+**Resoluções, Portarias e Instruções Conjuntas**
+   - Traduzem decisões conjuntas entre órgãos`,
+        difficulty: 'intermediate'
+      }
+    ]
+  },
+  2: { // Sigilo Bancário
+    lessons: [
+      {
+        title: 'Lei Complementar 105/2001',
+        content: `**Lei Complementar nº 105, de 10 de janeiro de 2001**
+
+**Princípio Fundamental:**
+"As instituições financeiras conservarão sigilo em suas operações ativas e passivas e serviços prestados"
+
+**Titulares do Dever de Sigilo:**
+- Instituições financeiras
+- Banco Central do Brasil
+- Comissão de Valores Mobiliários
+
+**Responsabilidade:**
+O dever de sigilo é extensivo ao Banco Central em relação às operações que realizar e às informações que obtiver no exercício de suas atribuições.`,
+        difficulty: 'beginner'
+      },
+      {
+        title: 'Hipóteses de Não Violação',
+        content: `**O que NÃO constitui violação do sigilo bancário:**
+
+1. **Troca entre instituições financeiras**
+   - Para fins cadastrais
+   - Através de centrais de risco
+   - Observando normas CMN e BCB
+
+2. **Informações a entidades de proteção ao crédito**
+   - Emitentes de cheques sem provisão
+   - Devedores inadimplentes
+
+3. **Comunicação de atos ilícitos**
+   - Comunicação às autoridades competentes
+   - Operações com recursos ilícitos
+   - Prática de crimes penais ou administrativos
+
+4. **Consentimento expresso**
+   - Revelação com consentimento do cliente
+
+5. **Autoridades competentes**
+   - Conforme lei específica
+   - Com mandado judicial
+   - Poder Judiciário
+   - Poder Legislativo (CPI)`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Quebra de Sigilo Judicial',
+        content: `**Crimes que permitem quebra de sigilo (Art. 4º, § 4º):**
+
+1. Crimes de terrorismo
+2. Tráfico ilícito de substâncias entorpecentes
+3. Contrabando ou tráfico de armas
+4. Extorsão mediante sequestro
+5. Crimes contra o Sistema Financeiro Nacional
+6. Crimes contra a Administração Pública
+7. Crimes contra ordem tributária e previdência social
+8. Lavagem de dinheiro ou ocultação de bens
+9. Crimes por organização criminosa
+
+**Processo:**
+- Necessária apuração de ocorrência de ilícito
+- Aplicável em qualquer fase do inquérito ou processo judicial
+- Ordem judicial necessária`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Sanções e Responsabilidades',
+        content: `**Penalidades pela quebra de sigilo:**
+
+**Pena Prevista (Art. 10):**
+- Reclusão: 1 a 4 anos
+- Multa
+- Aplicam-se disposições do Código Penal
+
+**Agentes Passivos:**
+- Qualquer pessoa que quebrar sigilo
+- Quem omitir ou retardar informações indevidamente
+- Quem prestar informação falsa
+
+**Responsabilidade de Servidor Público:**
+- Responde pessoal e diretamente pelos danos
+- Sem prejuízo da responsabilidade objetiva da entidade pública
+- Se agiu conforme orientação oficial, a entidade também responde`,
+        difficulty: 'intermediate'
+      }
+    ]
+  },
+  3: { // Crimes contra o SFN
+    lessons: [
+      {
+        title: 'Lei 7.492/1986 - Principais Crimes',
+        content: `**Lei de 16 de junho de 1986 - Crimes contra o Sistema Financeiro Nacional**
+
+**Art. 16 - Operação de Instituição Financeira sem Autorização**
+"Fazer operar, sem a devida autorização, ou com autorização obtida mediante declaração falsa, instituição financeira"
+
+Pena: Reclusão de 1 a 4 anos e multa
+
+**Art. 21 - Atribuição de Falsa Identidade**
+"Atribuir-se, ou atribuir a terceiro, falsa identidade, para realização de operação de câmbio"
+
+Pena: Detenção de 1 a 4 anos e multa
+
+Incide na mesma pena quem:
+- Sonega informação obrigada a prestar
+- Presta informação falsa
+
+**Art. 22 - Operação de Câmbio não Autorizada**
+"Efetuar operação de câmbio não autorizada, com o fim de promover evasão de divisas do País"
+
+Pena: Reclusão de 2 a 6 anos e multa`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Evasão de Divisas e Conceitos Conexos',
+        content: `**Art. 22 - Parágrafo Único:**
+Incorre na mesma pena quem:
+- A qualquer título, promove, sem autorização legal, saída de moeda ou divisa para exterior
+- Mantém depósitos não declarados à repartição federal competente no exterior
+
+**Conceito de Evasão de Divisas:**
+Transferência não autorizada de valores para o exterior
+
+**Consequências:**
+- Crime grave contra o Sistema Financeiro Nacional
+- Competência da Justiça Federal
+- Investigação pela Polícia Federal
+
+**Relevância para Operações de Câmbio:**
+- Instituições autorizadas devem verificar legalidade da operação
+- Fundamentação econômica é essencial
+- Documentação comprobatória necessária`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Legislação Conexa - Lei 9.613/1998',
+        content: `**Lei de Lavagem de Dinheiro e Financiamento do Terrorismo**
+
+**Art. 1º - Lavagem de Dinheiro:**
+"Ocultar ou dissimular a natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes de infração penal"
+
+Pena: Reclusão de 3 a 10 anos e multa
+
+**Conexão com Crimes contra o SFN:**
+- Lei 7.492 tipifica crimes que podem gerar recursos para lavagem
+- Lei 9.613 tipifica o uso desses recursos ilícitos
+- Ambas aplicáveis simultaneamente
+
+**Entidade de Inteligência Financeira:**
+- COAF (Conselho de Controle de Atividades Financeiras)
+- Recebe comunicações de operações suspeitas
+- Coordena combate à lavagem e ao terrorismo`,
+        difficulty: 'intermediate'
+      }
+    ]
+  },
+  4: { // Operações de Câmbio
+    lessons: [
+      {
+        title: 'Conceitos Fundamentais',
+        content: `**Câmbio Sacado:**
+Transações cuja liquidação se viabiliza mediante débitos e créditos em contas em moeda estrangeira mantidas no exterior. A entrega/recebimento de moeda estrangeira ocorre no país que emitiu a moeda.
+
+Operações liquidadas:
+- Operações comerciais (bens e serviços)
+- Créditos e investimentos externos
+- Operações do mercado interbancário
+
+**Câmbio Manual:**
+Entrega de moeda estrangeira diretamente do vendedor ao comprador em mãos, no ato da negociação.
+
+Formas:
+- Papel-moeda
+- Cheques de viagem (traveller's cheques)
+
+Aplicabilidade:
+- Viagens internacionais
+- Compra e venda de moedas em espécie
+
+**Declaração de Porte de Valores:**
+- Obrigatória para valores ≥ US\$10.000 (IN RFB 2.117/2022)
+- Aplicável a: espécie, cheques, cheques de viagem
+- Sem restrição quanto ao montante
+- Descumprimento: apreensão e possível perda para o Tesouro`,
+        difficulty: 'beginner'
+      },
+      {
+        title: 'Fundamentação Econômica e Transferências Unilaterais',
+        content: `**Fundamentação Econômica:**
+Qualquer operação no mercado de câmbio precisa ter lastro em transação real, firme e consistente.
+
+Requisitos:
+- Razoabilidade econômica
+- Conexão com atividades comerciais, empresariais ou interesses pessoais do cliente
+- Sem dissimulações ou planejamentos financeiros fictícios
+
+**Transferências Unilaterais:**
+Gastos que não têm contrapartida em prestação de serviços ou aquisição de produtos
+
+Exemplos:
+- Manutenção de residentes e familiares no exterior
+- Doações
+- Pensões alimentícias
+- Assistência social
+
+**Gastos com Viagens ao Exterior:**
+Gastos pessoais vinculados à viagem ao exterior
+- Saques e pagamentos de despesas
+- Deslocamentos, hospedagem, lazer
+- Documentação comprobatória pode ser solicitada`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Regulamentação e Princípios Normativos',
+        content: `**Lei 14.286/2021 - Modernização da Legislação Cambial**
+
+**Objetivos:**
+1. Consolidar, modernizar e simplificar legislação
+2. Permitir convertibilidade do Real
+3. Fomentar novos nichos de negócios
+4. Garantir segurança jurídica
+5. Alinhar às melhores práticas internacionais
+
+**Princípios Fundamentais:**
+1. Operações realizadas livremente, sem limitação de valor
+2. Observância da legislação
+3. Diretrizes do CMN
+4. Regulação do BCB
+
+**Responsabilidades das Instituições Autorizadas:**
+1. Identificação e qualificação de clientes
+2. Assegurar processamento lícito de operações
+3. Medidas de prevenção a atos ilícitos
+4. Prevenção à lavagem de dinheiro e financiamento do terrorismo (PLD/FTP)
+
+**Responsabilidades do Cliente:**
+- Classificação da finalidade da operação (Lei 14.286, Art. 4º, § 2º)
+- Orientação técnica fornecida pela instituição`,
+        difficulty: 'intermediate'
+      }
+    ]
+  },
+  5: { // Legislação Cambial
+    lessons: [
+      {
+        title: 'Operações no Mercado de Câmbio',
+        content: `**Lei 14.286/2021 - Artigos Principais**
+
+**Art. 2º - Liberdade de Operação:**
+"As operações no mercado de câmbio podem ser realizadas livremente, sem limitação de valor, observados a legislação, as diretrizes estabelecidas pelo Conselho Monetário Nacional e o regulamento a ser editado pelo Banco Central do Brasil"
+
+**Art. 3º - Operações Somente por Instituições Autorizadas:**
+"As operações no mercado de câmbio podem ser realizadas somente por meio de instituições autorizadas a operar nesse mercado pelo Banco Central do Brasil"
+
+**Art. 4º - Responsabilidades da Instituição Autorizada:**
+1. Identificação e qualificação de clientes
+2. Assegurar processamento lícito
+3. Adotar medidas para prevenir atos ilícitos
+   - Lavagem de dinheiro
+   - Financiamento do terrorismo
+   - Observar Lei 9.613/1998
+
+**Taxa de Câmbio:**
+"A taxa de câmbio é livremente pactuada entre as instituições autorizadas e seus clientes"`,
+        difficulty: 'beginner'
+      },
+      {
+        title: 'Competências do Banco Central',
+        content: `**Art. 5º - Competências do BCB:**
+
+1. Regulamentar o mercado de câmbio e operações
+2. Disciplinar constituição, funcionamento e supervisão de instituições
+3. Autorizar constituição, funcionamento e transferência de controle
+4. Autorizar instituições a operar em câmbio
+5. Cancelar autorizações
+6. Autorizar posse e exercício em órgãos de administração
+7. Supervisionar instituições autorizadas
+8. Regulamentar contas em reais de não residentes
+9. Regulamentar contas em moeda estrangeira no País
+10. Manter contas de depósito e compensação de organismos internacionais
+
+**Poder de Supervisão e Sanção:**
+- Exigir disponibilização de dados e informações
+- Exigir documentos e livros
+- Negativa de atendimento = embaraço à fiscalização
+- Sujeito a sanções aplicáveis`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Capital Brasileiro e Estrangeiro',
+        content: `**Capitais Brasileiros no Exterior:**
+Valores, bens, direitos e ativos detidos fora do Brasil por residentes
+
+**Capitais Estrangeiros no País:**
+Valores, bens, direitos e ativos detidos no Brasil por não residentes
+
+**Diretrizes:**
+1. Capital estrangeiro recebe tratamento jurídico idêntico ao capital nacional
+2. Em igualdade de condições
+3. Observância da legislação
+
+**Competências do BCB:**
+1. Regulamentar e monitorar fluxos e estoques
+2. Estabelecer procedimentos para remessas
+3. Requisitar informações (critério próprio)
+4. Observar legislação e fundamentação econômica
+
+**Infrações:**
+Sujeitas a penalidades aplicáveis pelo BCB conforme Lei 13.506/2017`,
+        difficulty: 'intermediate'
+      }
+    ]
+  },
+  6: { // Normas Cambiais
+    lessons: [
+      {
+        title: 'Resolução CMN 5.042 e BCB 277',
+        content: `**Resolução CMN 5.042/2022:**
+Estabelece diretrizes para operações no mercado de câmbio
+
+**Principios Norteadores:**
+1. Competição na prestação de serviços
+2. Atendimento das necessidades (liberdade de escolha, privacidade, transparência)
+3. Eficiência das operações
+4. Estímulo à inovação
+5. Redução de custos de transação
+6. Inclusão financeira
+7. Confiabilidade e qualidade dos produtos
+8. Integridade, conformidade, segurança e sigilo
+
+**Resolução BCB 277/2022:**
+Regulamenta Lei 14.286/2021
+
+Compreende:
+- Compra e venda de moeda estrangeira
+- Pagamentos e transferências internacionais
+- Contas em reais de não residentes
+- Contas em moeda estrangeira no Brasil
+- Operações com ouro-instrumento cambial
+- Serviços de ativos virtuais (incluído 2025)`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Classificação e Informações de Operações',
+        content: `**Classificação da Finalidade (Art. 4º):**
+
+Códigos de Classificação:
+- Anexo III: operações até US\$50.000
+- Anexo IV: operações superiores a US\$50.000
+- Anexo V: operações de eFX (transferências internacionais)
+
+**Informações Mínimas da Operação (Anexo I):**
+1. Identificação da instituição e intermediadora
+2. Identificação do cliente
+3. Número da operação no Sistema Câmbio
+4. Data e tipo de evento (contratação, alteração, cancelamento)
+5. Compra ou venda
+6. Moeda estrangeira
+7. Valor em moeda estrangeira
+8. Taxa de câmbio
+9. Valor em reais
+10. Valor Efetivo Total (VET)
+11. Forma de entrega
+12. Data de liquidação
+13. Finalidade da operação
+14. Pagador/recebedor no exterior
+15. Relação de vínculo
+16. Percentual de adiantamento
+17. Código de capitais estrangeiros
+18. Instruções de recebimento/pagamento`,
+        difficulty: 'advanced'
+      },
+      {
+        title: 'Operações com Clientes e Limites',
+        content: `**Art. 29 - Autorizações para Operar:**
+
+**Bancos e Caixa Econômica Federal:**
+- Todas as operações do mercado de câmbio
+
+**Sociedades Corretoras de Câmbio, Crédito, Financiamento e Investimento:**
+- Compra/venda de moeda estrangeira com clientes: até US\$500.000
+- Operações interbancárias para liquidação pronta
+- Arbitragens no país e exterior
+
+**Instituições de Pagamento (emissoras de moeda eletrônica):**
+- Operações com clientes: até US\$100.000
+- Operações interbancárias
+
+**Limites de Valor:**
+Não impedem operações de pagamento parcelado com valor total superior
+Não se aplicam quando instituição é compradora E vendedora (para operações de clientes)
+
+**Posição de Câmbio (Art. 45):**
+Saldo de operações de compra e venda no Sistema Câmbio
+
+Limites:
+- Bancos: sem limite
+- Outras instituições: posição comprada sem limite; posição vendida = zero`,
+        difficulty: 'advanced'
+      },
+      {
+        title: 'Liquidação de Operações',
+        content: `**Art. 38 - Formas de Liquidação:**
+
+1. **Pronta:** até 2 dias úteis (excluindo dias não úteis em uma das praças)
+2. **Futura:** até 1.500 dias
+3. **A Termo:** até 1.500 dias (operações interbancárias)
+
+**Casos Especiais:**
+
+Liquidação obrigatória no mesmo dia:
+- Compra/venda de moeda em espécie
+- Cheques de viagem
+- Aporte e retirada em cartão/meio eletrônico
+
+Prazo mínimo:
+- Venda de ouro a título de doação (≥ R\$100.000): 1 dia útil
+
+Prazo máximo entre eventos (exportação):
+- Entre liquidação e embarque: 1.500 dias
+
+**Restrições:**
+Alteração das condições pactuadas é vedada (comprador, vendedor, valor em moeda estrangeira, valor em reais, moeda, taxa)`,
+        difficulty: 'advanced'
+      }
+    ]
+  },
+  7: { // Correspondentes Cambiais
+    lessons: [
+      {
+        title: 'Contratação de Correspondentes',
+        content: `**Resolução CMN 4.935/2021**
+
+**Definição:**
+Correspondente atua por conta e sob diretrizes da instituição contratante
+
+A instituição contratante assume inteira responsabilidade pelo atendimento prestado
+
+**Garantias da Instituição Contratante:**
+1. Integridade das transações
+2. Confiabilidade
+3. Segurança
+4. Sigilo das transações
+5. Cumprimento de legislação e regulamentação
+
+**Quem Pode ser Correspondente:**
+1. Sociedades (sociedades anônimas, limitadas)
+2. Empresários
+3. Associações definidas no Código Civil
+4. Prestadores de serviços notariais e de registro
+5. Empresas públicas
+
+**Proibições:**
+1. Entidades cuja atividade principal seja prestar serviços de correspondente
+2. Entidades controladas por administrador da instituição contratante
+   (Exceção: se o administrador também é controlador)`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Operações de Câmbio por Correspondente',
+        content: `**Art. 13 - Operações Permitidas ao Correspondente:**
+
+**Limitadas a:**
+1. Compra e venda de moeda estrangeira em espécie, cheque ou cheque de viagem
+   - Carga de moeda estrangeira em cartão pré-pago
+
+2. Execução ativa ou passiva de ordem de pagamento
+   - Transferência unilateral do/para exterior
+
+3. Recepção e encaminhamento de propostas de operações cambiais
+
+**Condições Obrigatórias (Parágrafo Único):**
+
+1. **Limite de valor:**
+   - US\$3.000 por operação
+   - Exceção compra/venda com espécie/contravalor em espécie: US\$1.000
+
+2. **Informação ao cliente:**
+   - Valor Efetivo Total (VET) obrigatoriamente informado
+
+3. **Comprovante:**
+   - Entregue ao cliente contendo:
+     - Identificação da instituição, correspondente e cliente
+     - Moeda estrangeira
+     - Taxa de câmbio
+     - Valores em moeda estrangeira e nacional
+     - VET
+     - Pagador/recebedor no exterior (quando aplicável)
+
+4. **Exclusividade:**
+   - Cláusula de exclusividade do correspondente para operações de câmbio
+
+5. **Observância das normas cambiais**`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Controles e Responsabilidades',
+        content: `**Art. 18 - Política de Atuação e Contratação:**
+
+Instituição contratante deve estabelecer política prevendo:
+
+1. **Critérios de contratação**
+
+2. **Mecanismos de controle de qualidade:**
+   - Indicadores de acompanhamento
+   - Demandas e reclamações registradas
+
+3. **Medidas administrativas:**
+   - Orientações
+   - Treinamentos
+   - Sanções
+   - Suspensão de atendimento
+   - Encerramento antecipado em casos graves
+
+**Art. 19 - Adequação de Controles Internos:**
+
+Instituição deve adequar sistema de controles:
+- Objetivo: monitorar atividades de correspondentes
+- Compatibilizar com volume e complexidade das operações
+- Auditoria interna: avaliar anualmente efetividade dos mecanismos
+
+**Poderes do BCB:**
+- Determinar adoção de medidas administrativas
+- Condionar contratação de novos correspondentes à correção de deficiências
+- Decisão precedida de manifestação da instituição contratante
+
+**Art. 21 - Divulgação de Informações:**
+
+Instituição deve manter relação atualizada de correspondentes:
+1. Em formato de dados abertos
+2. No sítio eletrônico
+3. Com informações: identificação, localização, atividades contratadas`,
+        difficulty: 'advanced'
+      }
+    ]
+  },
+  8: { // Prevenção à Lavagem de Dinheiro
+    lessons: [
+      {
+        title: 'Lei 9.613/1998 - Fundamentos',
+        content: `**Lei de Lavagem de Dinheiro e Financiamento do Terrorismo**
+
+**Art. 1º - Definição:**
+"Ocultar ou dissimular a natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes, direta ou indiretamente, de infração penal"
+
+Pena: Reclusão 3 a 10 anos e multa
+
+**Art. 1º, § 1º - Condutas Equiparadas:**
+
+Incorre na mesma pena quem:
+1. Converte em ativos lícitos bens provenientes de crime
+2. Adquire, recebe, troca, negocia, dá em garantia, guarda, tem em depósito, movimenta ou transfere
+3. Importa ou exporta com valores não correspondentes aos verdadeiros
+
+**Art. 1º, § 2º - Outras Condutas:**
+
+Incorre na mesma pena quem:
+1. Utiliza bens ilícitos em atividade econômica ou financeira
+2. Participa de grupo, associação ou escritório sabendo que sua atividade é dirigida à prática de lavagem
+
+**Ampliação pela Lei 12.683/2012:**
+Mudou de legislação "segunda geração" para "terceira geração"
+- Crime antecedente: qualquer infração penal (crime ou contravenção)
+- Não apenas crimes específicos`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Circular BCB 3.978/2020',
+        content: `**Política de Prevenção à Lavagem de Dinheiro e Financiamento do Terrorismo**
+
+**Obrigações das Instituições:**
+
+1. **Implementar Política:**
+   - Baseada em princípios e diretrizes
+   - Compatível com perfil de risco:
+     - Clientes
+     - Instituição
+     - Operações, transações, produtos e serviços
+     - Funcionários, parceiros e prestadores
+
+2. **Diretrizes da Política (Art. 3º):**
+   - Definição de papéis e responsabilidades
+   - Procedimentos para avaliação de novos produtos
+   - Avaliação interna de risco
+   - Verificação do cumprimento
+   - Identificação e correção de deficiências
+   - Promoção de cultura organizacional
+   - Seleção de funcionários e prestadores
+   - Capacitação periódica
+
+3. **Diretor Responsável (Art. 9º):**
+   - Indicação formal ao BCB
+   - Responsável pelo cumprimento das obrigações`,
+        difficulty: 'intermediate'
+      },
+      {
+        title: 'Conhecimento do Cliente e Devida Diligência',
+        content: `**Procedimentos de Identificação (Art. 16):**
+
+**Informações Mínimas - Pessoa Natural:**
+- Nome completo
+- Número de CPF
+
+**Informações Mínimas - Pessoa Jurídica:**
+- Firma ou denominação social
+- Número de CNPJ
+
+**Procedimentos de Qualificação (Art. 18):**
+
+Devem permitir qualificar clientes coletando:
+1. Local de residência (pessoa natural)
+2. Local de sede ou filial (pessoa jurídica)
+3. Capacidade financeira
+   - Renda (pessoa natural)
+   - Faturamento (pessoa jurídica)
+
+**Verificação e Validação:**
+- Avaliada de acordo com perfil de risco
+- Natureza da relação de negócio
+
+**Pessoa Exposta Politicamente (PEP - Art. 27):**
+
+Procedimentos de verificação:
+1. Solicitar declaração expressa do cliente
+2. Recorrer a informações públicas
+3. Consultar bases de dados públicas ou privadas
+
+Condição de PEP se aplica por 5 anos após deixar cargo`,
+        difficulty: 'advanced'
+      },
+      {
+        title: 'Monitoramento e Comunicação de Operações Suspeitas',
+        content: `**Procedimentos de Monitoramento (Art. 39):**
+
+Devem implementar procedimentos de monitoramento e seleção com objetivo de:
+- Identificar operações suspeitas
+- Dispensar especial atenção
+
+**Exemplos de Operações Suspeitas:**
+
+1. Operações que por partes, valores, formas de realização, instrumentos, falta de fundamento
+2. Operações que pareçam burlar procedimentos
+3. Depósito/saque em espécie com indícios de ocultação
+4. Operações incompatíveis com capacidade financeira
+5. Operações com PEP
+6. Operações que impossibilitem identificar beneficiário final
+7. Operações com países com deficiências estratégicas (GAFI)
+8. Operações com informações cadastrais não atualizadas
+
+**Comunicação ao COAF (Art. 48-49):**
+
+Operações Suspeitas:
+- Comunicadas até o final da análise (máx. 45 dias)
+- Até dia útil seguinte da decisão ao COAF
+
+Operações em Espécie:
+- Depósito/aporte ≥ R\$50.000
+- Saque ≥ R\$50.000
+- Pagamentos em espécie ≥ R\$50.000
+- Comunicadas até dia útil seguinte
+
+**Sigilo Obrigatório:**
+- Vedada ciência aos envolvidos
+- Comunicações de boa-fé não acarretam responsabilidade civil/administrativa`,
+        difficulty: 'advanced'
+      }
+    ]
+  }
+};
+
+// Import expanded quiz data
+export { lessonQuizzes, comprehensiveExam } from './quizData';
+
+// Keep backward compatibility with original quizQuestions
+export const quizQuestions = [
+  // Original 10 questions for backward compatibility
+  {
+    moduleId: 1,
+    lessonId: 1,
+    question: "No que diz respeito às autorizações concedidas para a prática de operações de câmbio, é correto afirmar que o Banco Central pode:",
+    options: [
+      "cassá-las em razão de irregularidades apuradas em processo administrativo",
+      "cancelá-las pela falta de prática habitual da realização de operações no mercado de câmbio",
+      "revogá-las, definitivamente, se não operarem por período superior a 360 dias",
+      "suspendê-las temporariamente em razão de conveniência e oportunidade"
+    ],
+    correctAnswer: 1,
+    explanation: "Segundo a Resolução BCB 277, Art. 34, § 2º, o Banco Central pode cancelar autorizações de ofício quando constatada falta de prática habitual da realização de operações no mercado de câmbio."
+  }
+];
