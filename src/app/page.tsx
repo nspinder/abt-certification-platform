@@ -7,42 +7,41 @@ export default function Home() {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [isSignUp, setIsSignUp] = useState(false)
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<any>(null)
 
-  const handleSignUp = async (e: React.FormEvent) => {
+  const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault()
-    try {
-      const res = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name }),
-      })
-      if (res.ok) {
-        const userData = await res.json()
-        setUser(userData)
-        localStorage.setItem('user', JSON.stringify(userData))
-      }
-    } catch (error) {
-      console.error('Sign up failed:', error)
+    if (!email || !name) {
+      alert('Please fill in all fields')
+      return
     }
+    const userData = {
+      id: Date.now().toString(),
+      email,
+      name,
+      createdAt: new Date().toISOString(),
+    }
+    setUser(userData)
+    localStorage.setItem('user', JSON.stringify(userData))
+    setEmail('')
+    setName('')
   }
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
-    try {
-      const res = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      })
-      if (res.ok) {
-        const userData = await res.json()
-        setUser(userData)
-        localStorage.setItem('user', JSON.stringify(userData))
-      }
-    } catch (error) {
-      console.error('Login failed:', error)
+    if (!email) {
+      alert('Please enter your email')
+      return
     }
+    const userData = {
+      id: Date.now().toString(),
+      email,
+      name: 'Learner',
+      createdAt: new Date().toISOString(),
+    }
+    setUser(userData)
+    localStorage.setItem('user', JSON.stringify(userData))
+    setEmail('')
   }
 
   if (user) {
