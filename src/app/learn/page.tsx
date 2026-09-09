@@ -129,19 +129,21 @@ export default function LearnPage() {
     performance.categoryScores[category].percentage =
       (performance.categoryScores[category].correct / performance.categoryScores[category].attempts) * 100
 
-    // Update module scores
+    // Update module scores (track lesson completion)
     if (quizType === 'lesson') {
       if (!performance.moduleScores[selectedModule]) {
         performance.moduleScores[selectedModule] = {
-          attempts: 0,
-          correct: 0,
-          percentage: 0
+          lessonsCompleted: [],
+          scores: {}
         }
       }
-      performance.moduleScores[selectedModule].attempts += totalCount
-      performance.moduleScores[selectedModule].correct += correctCount
-      performance.moduleScores[selectedModule].percentage =
-        (performance.moduleScores[selectedModule].correct / performance.moduleScores[selectedModule].attempts) * 100
+      // Mark this lesson as completed if not already
+      const completedLessons = performance.moduleScores[selectedModule].lessonsCompleted
+      if (!completedLessons.includes(selectedLesson)) {
+        completedLessons.push(selectedLesson)
+      }
+      // Store score for this lesson
+      performance.moduleScores[selectedModule].scores[selectedLesson] = (correctCount / totalCount) * 100
     }
 
     // Save to localStorage
@@ -153,7 +155,10 @@ export default function LearnPage() {
     if (!userPerformance || !userPerformance.moduleScores || !userPerformance.moduleScores[moduleId]) {
       return 0
     }
-    return userPerformance.moduleScores[moduleId].percentage || 0
+    const totalLessons = ((lessonContent as any)[moduleId]?.lessons.length) || 0
+    const lessonsCompleted = userPerformance.moduleScores[moduleId].lessonsCompleted?.length || 0
+    if (totalLessons === 0) return 0
+    return Math.round((lessonsCompleted / totalLessons) * 100)
   }
 
   if (!user) {
