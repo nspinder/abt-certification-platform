@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { lessonContent, quizQuestions } from '@/lib/lessonContent'
+import { enhancedLessonContent as lessonContent } from '@/lib/enhancedLessonContent'
 import { lessonQuizzes, comprehensiveExam } from '@/lib/quizData'
 import Link from 'next/link'
 
