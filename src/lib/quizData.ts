@@ -4,7 +4,7 @@ export const lessonQuizzes = [
   // Lesson 1: Introdução ao SFN
   {
     moduleId: 1,
-    lessonId: 1,
+    lessonId: 0,
     question: "O Sistema Financeiro Nacional (SFN) abrange quantos segmentos principais?",
     options: [
       "Dois segmentos",
@@ -18,7 +18,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual mercado dentro do SFN permite a compra e venda de moedas estrangeiras?",
     options: [
       "Mercado Monetário",
@@ -32,7 +32,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual é o objetivo do Mercado de Capitais?",
     options: [
       "Fornecer papel-moeda e moeda escritural",
@@ -46,7 +46,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 1,
+    lessonId: 0,
     question: "De acordo com o SFN, o que é Previdência Fechada?",
     options: [
       "Seguros de proteção contra riscos gerais",
@@ -62,7 +62,7 @@ export const lessonQuizzes = [
   // Lesson 2: Órgãos Normativos e Supervisores
   {
     moduleId: 1,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é o principal órgão normativo do SFN?",
     options: [
       "Banco Central do Brasil",
@@ -76,7 +76,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 2,
+    lessonId: 1,
     question: "Quem compõe o Conselho Monetário Nacional (CMN)?",
     options: [
       "Presidente da República, Ministro da Fazenda, Presidente do BCB",
@@ -89,7 +89,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual órgão regula e fiscaliza os seguros privados?",
     options: [
       "CNPC - Conselho Nacional de Previdência Complementar",
@@ -102,7 +102,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é a principal função da CVM (Comissão de Valores Mobiliários)?",
     options: [
       "Supervisionar instituições bancárias",
@@ -117,7 +117,7 @@ export const lessonQuizzes = [
   // Lesson 3: Banco Central do Brasil
   {
     moduleId: 1,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual é a missão oficial do Banco Central do Brasil?",
     options: [
       "Arrecadar impostos e taxas para o governo",
@@ -130,7 +130,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 3,
+    lessonId: 2,
     question: "A Diretoria Colegiada do Banco Central é composta por:",
     options: [
       "5 membros",
@@ -143,7 +143,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 3,
+    lessonId: 2,
     question: "O Banco Central do Brasil estabeleceu sua autonomia através de qual lei?",
     options: [
       "Lei Complementar 105/2001",
@@ -156,7 +156,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual não é uma função primária do Banco Central?",
     options: [
       "Manter inflação baixa e estável",
@@ -171,7 +171,7 @@ export const lessonQuizzes = [
   // Lesson 4: Hierarquia das Normas
   {
     moduleId: 1,
-    lessonId: 4,
+    lessonId: 3,
     question: "Qual é o primeiro nível hierárquico das normas do BCB?",
     options: [
       "Portarias BCB",
@@ -184,7 +184,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 4,
+    lessonId: 3,
     question: "Qual documento tem menor hierarquia normativa?",
     options: [
       "Resoluções CMN",
@@ -197,7 +197,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 4,
+    lessonId: 3,
     question: "Qual é a função das Instruções Normativas na hierarquia?",
     options: [
       "Formular políticas de moeda e crédito",
@@ -210,7 +210,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 1,
-    lessonId: 4,
+    lessonId: 3,
     question: "O que são Resoluções, Portarias e Instruções Conjuntas?",
     options: [
       "Documentos assinados por uma única autoridade",
@@ -226,7 +226,7 @@ export const lessonQuizzes = [
   // Lesson 1: Lei Complementar 105/2001
   {
     moduleId: 2,
-    lessonId: 1,
+    lessonId: 0,
     question: "O sigilo bancário está amparado em qual documento legal?",
     options: [
       "Lei ordinária 9.613/1998",
@@ -239,7 +239,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual é o objetivo principal do sigilo bancário?",
     options: [
       "Proteger os lucros dos bancos",
@@ -252,7 +252,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 1,
+    lessonId: 0,
     question: "Pode o sigilo bancário ser quebrado?",
     options: [
       "Nunca, em nenhuma circunstância",
@@ -265,7 +265,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual instituição tem acesso garantido a informações bancárias sem quebra de sigilo?",
     options: [
       "Qualquer órgão público que solicitar",
@@ -280,7 +280,7 @@ export const lessonQuizzes = [
   // Lesson 2: Não-violação do Sigilo
   {
     moduleId: 2,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual das seguintes situações NÃO é considerada violação de sigilo bancário?",
     options: [
       "Divulgar informações de conta para fins comerciais",
@@ -293,7 +293,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 2,
+    lessonId: 1,
     question: "As instituições financeiras podem compartilhar dados entre si?",
     options: [
       "Nunca, em nenhuma circunstância",
@@ -306,7 +306,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 2,
+    lessonId: 1,
     question: "Uma instituição financeira pode fornecer informações para fins de marketing?",
     options: [
       "Sim, sempre",
@@ -321,7 +321,7 @@ export const lessonQuizzes = [
   // Lesson 3: Procedimentos para Quebra Judicial
   {
     moduleId: 2,
-    lessonId: 3,
+    lessonId: 2,
     question: "Quem pode solicitar a quebra de sigilo bancário judicialmente?",
     options: [
       "Qualquer pessoa que solicitar",
@@ -334,7 +334,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 3,
+    lessonId: 2,
     question: "A quebra de sigilo judicial deve ser motivada?",
     options: [
       "Não, pode ser solicitada sem justificativa",
@@ -347,7 +347,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual é a consequência para a instituição que informa cliente sobre pedido de quebra de sigilo antes da autorização judicial?",
     options: [
       "Nenhuma, é considerado praxe",
@@ -362,7 +362,7 @@ export const lessonQuizzes = [
   // Lesson 4: Sanções por Violação
   {
     moduleId: 2,
-    lessonId: 4,
+    lessonId: 3,
     question: "Qual é a principal sanção para violação de sigilo bancário?",
     options: [
       "Apenas advertência escrita",
@@ -375,7 +375,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 4,
+    lessonId: 3,
     question: "Funcionários que violam sigilo bancário podem sofrer punição penal?",
     options: [
       "Não, apenas a instituição sofre punição",
@@ -388,7 +388,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 2,
-    lessonId: 4,
+    lessonId: 3,
     question: "A LGPD (Lei Geral de Proteção de Dados) afeta o sigilo bancário?",
     options: [
       "Não, são regulamentações completamente separadas",
@@ -404,7 +404,7 @@ export const lessonQuizzes = [
   // Lesson 1: Lei 7.492/1986
   {
     moduleId: 3,
-    lessonId: 1,
+    lessonId: 0,
     question: "A Lei 7.492/1986 criminaliza quais condutas?",
     options: [
       "Apenas roubo de bancos",
@@ -417,7 +417,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 3,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual é uma conduta tipificada como crime na Lei 7.492?",
     options: [
       "Realizar operação de câmbio dentro dos limites legais",
@@ -430,7 +430,7 @@ export const lessonQuizzes = [
   },
   {
     movieId: 3,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual é a pena para evasão de divisas (saída ilegal de moeda estrangeira)?",
     options: [
       "Apenas multa",
@@ -443,7 +443,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 3,
-    lessonId: 1,
+    lessonId: 0,
     question: "Fazer operação de câmbio sem autorização é crime?",
     options: [
       "Não, é apenas infração administrativa",
@@ -458,7 +458,7 @@ export const lessonQuizzes = [
   // Lesson 2: Crimes específicos
   {
     moduleId: 3,
-    lessonId: 2,
+    lessonId: 1,
     question: "Falsificar documentos para operação financeira é crime sob qual lei?",
     options: [
       "Lei de Falências",
@@ -471,7 +471,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 3,
-    lessonId: 2,
+    lessonId: 1,
     question: "Uma instituição financeira pode ser responsabilizada criminalmente por atos de seus funcionários?",
     options: [
       "Não, apenas o funcionário responde",
@@ -484,7 +484,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 3,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é a relação entre crimes contra o SFN e lavagem de dinheiro?",
     options: [
       "São completamente separados",
@@ -499,7 +499,7 @@ export const lessonQuizzes = [
   // Lesson 3: Procedimentos investigativos
   {
     moduleId: 3,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual órgão tem competência para investigar crimes contra o SFN?",
     options: [
       "Somente o Banco Central",
@@ -512,7 +512,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 3,
-    lessonId: 3,
+    lessonId: 2,
     question: "O Banco Central pode abrir processo administrativo por crime?",
     options: [
       "Não, Banco Central não tem competência em matéria criminal",
@@ -525,7 +525,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 3,
-    lessonId: 3,
+    lessonId: 2,
     question: "Denúncia anônima de crime contra o SFN é aceita?",
     options: [
       "Não, todas as denúncias devem ser identificadas",
@@ -541,7 +541,7 @@ export const lessonQuizzes = [
   // Lesson 1: Conceitos fundamentais
   {
     moduleId: 4,
-    lessonId: 1,
+    lessonId: 0,
     question: "O que é uma operação de câmbio?",
     options: [
       "Operação de compra de ações estrangeiras",
@@ -554,7 +554,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual é a base legal das operações de câmbio no Brasil?",
     options: [
       "Lei 9.613/1998",
@@ -567,7 +567,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 1,
+    lessonId: 0,
     question: "Quem pode realizar operações de câmbio legalmente no Brasil?",
     options: [
       "Qualquer pessoa",
@@ -580,7 +580,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 1,
+    lessonId: 0,
     question: "É necessária autorização prévia do Banco Central para toda operação de câmbio por pessoa física?",
     options: [
       "Sim, sempre",
@@ -595,7 +595,7 @@ export const lessonQuizzes = [
   // Lesson 2: Justificativa econômica
   {
     moduleId: 4,
-    lessonId: 2,
+    lessonId: 1,
     question: "Todas as operações de câmbio precisam ter justificativa econômica?",
     options: [
       "Sim, sempre",
@@ -608,7 +608,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é a consequência de realizar câmbio sem justificativa econômica adequada?",
     options: [
       "Nenhuma, é permitido",
@@ -621,7 +621,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 2,
+    lessonId: 1,
     question: "Compra de moeda estrangeira para entesouramento é permitida?",
     options: [
       "Sim, sem limites",
@@ -636,7 +636,7 @@ export const lessonQuizzes = [
   // Lesson 3: Regulações e princípios
   {
     moduleId: 4,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual é o regulador primário das operações de câmbio no Brasil?",
     options: [
       "Ministério do Exterior",
@@ -649,7 +649,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 3,
+    lessonId: 2,
     question: "As operações de câmbio precisam ser registradas?",
     options: [
       "Não, são operações privadas",
@@ -662,7 +662,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 4,
-    lessonId: 3,
+    lessonId: 2,
     question: "É permitido câmbio paralelo ou não oficial no Brasil?",
     options: [
       "Sim, é legal e regulado",
@@ -678,7 +678,7 @@ export const lessonQuizzes = [
   // Lesson 1: Lei 14.286/2021
   {
     moduleId: 5,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual foi a principal mudança trazida pela Lei 14.286/2021?",
     options: [
       "Proibiu todas as operações de câmbio",
@@ -691,7 +691,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 5,
-    lessonId: 1,
+    lessonId: 0,
     question: "De acordo com a Lei 14.286/2021, a taxa de câmbio é:",
     options: [
       "Fixada diariamente pelo Banco Central",
@@ -704,7 +704,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 5,
-    lessonId: 1,
+    lessonId: 0,
     question: "A Lei 14.286/2021 permite operações de câmbio entre pessoas físicas em espécie?",
     options: [
       "Não, proíbe completamente",
@@ -719,7 +719,7 @@ export const lessonQuizzes = [
   // Lesson 2: Competências do BCB
   {
     moduleId: 5,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é a principal competência do BCB após Lei 14.286/2021?",
     options: [
       "Determinar as taxas de câmbio",
@@ -732,7 +732,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 5,
-    lessonId: 2,
+    lessonId: 1,
     question: "O BCB pode cassar autorização de instituição que opera câmbio?",
     options: [
       "Não, não tem esse poder",
@@ -745,7 +745,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 5,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual instituição supervisiona a conformidade cambial no Brasil?",
     options: [
       "Ministério do Exterior",
@@ -760,7 +760,7 @@ export const lessonQuizzes = [
   // Lesson 3: Operações de capital
   {
     moduleId: 5,
-    lessonId: 3,
+    lessonId: 2,
     question: "O que é uma operação de capital cambial?",
     options: [
       "Operação de compra de moeda para consumo",
@@ -773,7 +773,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 5,
-    lessonId: 3,
+    lessonId: 2,
     question: "Investimento estrangeiro no Brasil requer operação de câmbio?",
     options: [
       "Não, é feito diretamente em reais",
@@ -786,7 +786,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 5,
-    lessonId: 3,
+    lessonId: 2,
     question: "Remessas de brasileiros no exterior para o Brasil precisam de câmbio?",
     options: [
       "Não, vão diretamente para conta bancária",
@@ -802,7 +802,7 @@ export const lessonQuizzes = [
   // Module 6: Normas Cambiais (lessons 1-4)
   {
     moduleId: 6,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual órgão emite Resoluções sobre normas cambiais?",
     options: [
       "Congresso Nacional",
@@ -815,7 +815,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 6,
-    lessonId: 1,
+    lessonId: 0,
     question: "Como são classificadas as operações de câmbio?",
     options: [
       "Apenas por valor",
@@ -828,7 +828,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 6,
-    lessonId: 1,
+    lessonId: 0,
     question: "Operações de câmbio de custeio referem-se a quê?",
     options: [
       "Compra de moeda para turismo",
@@ -842,7 +842,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 6,
-    lessonId: 2,
+    lessonId: 1,
     question: "O limite de câmbio para pessoa física em espécie foi modificado na Lei 14.286?",
     options: [
       "Aumentou para US$ 1.000",
@@ -855,7 +855,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 6,
-    lessonId: 2,
+    lessonId: 1,
     question: "Operações cambiais cliente referem-se a:",
     options: [
       "Operações entre bancos",
@@ -869,7 +869,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 6,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual é o limite para operação de câmbio com correspondente?",
     options: [
       "Sem limite",
@@ -882,7 +882,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 6,
-    lessonId: 3,
+    lessonId: 2,
     question: "Operações entre instituições autorizadas têm limites?",
     options: [
       "Sim, US$ 1.000 por operação",
@@ -896,7 +896,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 6,
-    lessonId: 4,
+    lessonId: 3,
     question: "O que é liquidação de câmbio?",
     options: [
       "Cancelamento da operação",
@@ -909,7 +909,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 6,
-    lessonId: 4,
+    lessonId: 3,
     question: "Qual é o prazo típico para liquidação de operação de câmbio?",
     options: [
       "Até 1 dia útil",
@@ -924,7 +924,7 @@ export const lessonQuizzes = [
   // Module 7: Correspondentes Cambiais
   {
     moduleId: 7,
-    lessonId: 1,
+    lessonId: 0,
     question: "O que é um Correspondente Cambial?",
     options: [
       "Instituição que emite moeda",
@@ -937,7 +937,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 7,
-    lessonId: 1,
+    lessonId: 0,
     question: "Quem pode ser contratado como correspondente?",
     options: [
       "Apenas bancos",
@@ -950,7 +950,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 7,
-    lessonId: 1,
+    lessonId: 0,
     question: "Correspondentes cambiais precisam de autorização prévia?",
     options: [
       "Não, qualquer um pode operar",
@@ -964,7 +964,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 7,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é o valor máximo que correspondente pode operar por transação?",
     options: [
       "US$ 1.000",
@@ -977,7 +977,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 7,
-    lessonId: 2,
+    lessonId: 1,
     question: "Correspondente pode fazer especulação cambial?",
     options: [
       "Sim, sem restrições",
@@ -991,7 +991,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 7,
-    lessonId: 3,
+    lessonId: 2,
     question: "Correspondente tem responsabilidade de compliance?",
     options: [
       "Não, fica a cargo da instituição contratante",
@@ -1004,7 +1004,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 7,
-    lessonId: 3,
+    lessonId: 2,
     question: "O que fazer se correspondente suspeita operação ilegal?",
     options: [
       "Ignorar e executar a operação",
@@ -1019,7 +1019,7 @@ export const lessonQuizzes = [
   // Module 8: Prevenção à Lavagem de Dinheiro
   {
     moduleId: 8,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual lei estabelece obrigações de Prevenção à Lavagem de Dinheiro (PLD)?",
     options: [
       "Lei 7.492/1986",
@@ -1032,7 +1032,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 1,
+    lessonId: 0,
     question: "O que é lavagem de dinheiro?",
     options: [
       "Limpeza de dinheiro físico",
@@ -1045,7 +1045,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 1,
+    lessonId: 0,
     question: "Qual órgão recebe comunicações de operações suspeitas no Brasil?",
     options: [
       "Polícia Federal",
@@ -1058,7 +1058,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 1,
+    lessonId: 0,
     question: "Instituições financeiras devem comunicar operações suspeitas?",
     options: [
       "Não, é confidencial",
@@ -1072,7 +1072,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 8,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual valor de operação em espécie deve ser comunicado ao COAF?",
     options: [
       "Acima de R$ 10.000",
@@ -1085,7 +1085,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 2,
+    lessonId: 1,
     question: "O que é operação atípica?",
     options: [
       "Qualquer operação fora do horário",
@@ -1098,7 +1098,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 2,
+    lessonId: 1,
     question: "Instituição que relata suspeita sofre punição legal?",
     options: [
       "Sim, pode sofrer ações judiciais",
@@ -1112,7 +1112,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 8,
-    lessonId: 3,
+    lessonId: 2,
     question: "O que é Know Your Customer (KYC)?",
     options: [
       "Técnica de venda",
@@ -1125,7 +1125,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 3,
+    lessonId: 2,
     question: "PLD/FTP engloba também prevenção a qual crime além de lavagem de dinheiro?",
     options: [
       "Corrupção",
@@ -1139,7 +1139,7 @@ export const lessonQuizzes = [
 
   {
     moduleId: 8,
-    lessonId: 4,
+    lessonId: 3,
     question: "Quem é responsável por implementar políticas de PLD/FTP?",
     options: [
       "Apenas o governo",
@@ -1152,7 +1152,7 @@ export const lessonQuizzes = [
   },
   {
     moduleId: 8,
-    lessonId: 4,
+    lessonId: 3,
     question: "Qual é a sanção para violação de obrigações de PLD/FTP?",
     options: [
       "Apenas advertência",
