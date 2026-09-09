@@ -129,9 +129,31 @@ export default function LearnPage() {
     performance.categoryScores[category].percentage =
       (performance.categoryScores[category].correct / performance.categoryScores[category].attempts) * 100
 
+    // Update module scores
+    if (quizType === 'lesson') {
+      if (!performance.moduleScores[selectedModule]) {
+        performance.moduleScores[selectedModule] = {
+          attempts: 0,
+          correct: 0,
+          percentage: 0
+        }
+      }
+      performance.moduleScores[selectedModule].attempts += totalCount
+      performance.moduleScores[selectedModule].correct += correctCount
+      performance.moduleScores[selectedModule].percentage =
+        (performance.moduleScores[selectedModule].correct / performance.moduleScores[selectedModule].attempts) * 100
+    }
+
     // Save to localStorage
     localStorage.setItem('userPerformance', JSON.stringify(performance))
     setUserPerformance(performance)
+  }
+
+  const getModuleProgress = (moduleId: number): number => {
+    if (!userPerformance || !userPerformance.moduleScores || !userPerformance.moduleScores[moduleId]) {
+      return 0
+    }
+    return userPerformance.moduleScores[moduleId].percentage || 0
   }
 
   if (!user) {
@@ -198,8 +220,9 @@ export default function LearnPage() {
                     {((lessonContent as any)[module.id]?.lessons.length) || 0} lessons
                   </p>
                   <div className="progress-bar">
-                    <div className="progress-fill" style={{ width: '0%' }}></div>
+                    <div className="progress-fill" style={{ width: `${getModuleProgress(module.id)}%` }}></div>
                   </div>
+                  <p className="text-xs text-gray-600 mt-2">{Math.round(getModuleProgress(module.id))}% Complete</p>
                 </div>
               ))}
             </div>
