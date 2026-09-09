@@ -26,6 +26,12 @@ export default function LearnPage() {
     } else {
       setUser(JSON.parse(userData))
     }
+
+    // Load performance data from localStorage
+    const performanceData = localStorage.getItem('userPerformance')
+    if (performanceData) {
+      setUserPerformance(JSON.parse(performanceData))
+    }
   }, [])
 
   const modules = [
@@ -165,6 +171,7 @@ export default function LearnPage() {
                 onClick={() => {
                   setCurrentQuestionIndex(0)
                   setSelectedAnswers({})
+                  setExplanationRevealed({})
                   setQuizComplete(false)
                   setScore(0)
                   setQuizType('comprehensive')
@@ -251,6 +258,7 @@ export default function LearnPage() {
                       onClick={() => {
                         setCurrentQuestionIndex(0)
                         setSelectedAnswers({})
+                        setExplanationRevealed({})
                         setQuizComplete(false)
                         setScore(0)
                         setQuizType('lesson')
@@ -302,6 +310,7 @@ export default function LearnPage() {
                       onClick={() => {
                         setCurrentQuestionIndex(0)
                         setSelectedAnswers({})
+                        setExplanationRevealed({})
                         setQuizComplete(false)
                         setScore(0)
                       }}
