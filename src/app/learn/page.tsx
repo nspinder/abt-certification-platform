@@ -137,12 +137,19 @@ export default function LearnPage() {
           scores: {}
         }
       }
+      // Ensure lessonsCompleted is an array
+      if (!Array.isArray(performance.moduleScores[selectedModule].lessonsCompleted)) {
+        performance.moduleScores[selectedModule].lessonsCompleted = []
+      }
       // Mark this lesson as completed if not already
       const completedLessons = performance.moduleScores[selectedModule].lessonsCompleted
       if (!completedLessons.includes(selectedLesson)) {
         completedLessons.push(selectedLesson)
       }
       // Store score for this lesson
+      if (!performance.moduleScores[selectedModule].scores) {
+        performance.moduleScores[selectedModule].scores = {}
+      }
       performance.moduleScores[selectedModule].scores[selectedLesson] = (correctCount / totalCount) * 100
     }
 
@@ -155,8 +162,12 @@ export default function LearnPage() {
     if (!userPerformance || !userPerformance.moduleScores || !userPerformance.moduleScores[moduleId]) {
       return 0
     }
+    const moduleScore = userPerformance.moduleScores[moduleId]
+    if (!moduleScore || !Array.isArray(moduleScore.lessonsCompleted)) {
+      return 0
+    }
     const totalLessons = ((lessonContent as any)[moduleId]?.lessons.length) || 0
-    const lessonsCompleted = userPerformance.moduleScores[moduleId].lessonsCompleted?.length || 0
+    const lessonsCompleted = moduleScore.lessonsCompleted.length || 0
     if (totalLessons === 0) return 0
     return Math.round((lessonsCompleted / totalLessons) * 100)
   }
