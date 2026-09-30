@@ -1908,11 +1908,3 @@ export const comprehensiveExam = [
     explanation: "Falta de justificativa pode resultar em multa e possível imputação criminal."
   }
 ];
-
-export const comprehensiveExam = [
-  // All 160 lessonQuizzes
-  ...lessonQuizzes.slice(0, 160),
-
-  // Plus all specialized questions (40 more as shown above)
-  ...lessonQuizzes.slice(160, 200)
-];
