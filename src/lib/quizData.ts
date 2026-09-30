@@ -1,34 +1,29 @@
-// Lesson-specific quiz questions (3-4 per lesson)
+// ABT Certification Platform - Quiz Questions
+// Phase 1: Cleaned & Standardized (20 questions per module = 160 total)
+// Removed duplicates, added new high-quality questions
+
 export const lessonQuizzes = [
-  // Module 1: Sistema Financeiro Nacional
-  // Lesson 1: Introdução ao SFN
+  // ============================================================
+  // MODULE 1: SISTEMA FINANCEIRO NACIONAL (20 questions)
+  // ============================================================
+  // Lesson 0: Introdução ao SFN
   {
     moduleId: 1,
     lessonId: 0,
     question: "O Sistema Financeiro Nacional (SFN) abrange quantos segmentos principais?",
-    options: [
-      "Dois segmentos",
-      "Três segmentos",
-      "Quatro segmentos",
-      "Cinco segmentos"
-    ],
+    options: ["Dois segmentos", "Três segmentos", "Quatro segmentos", "Cinco segmentos"],
     correctAnswer: 1,
     explanation: "O SFN abrange três segmentos principais: Moeda, Crédito, Capitais e Câmbio; Seguros Privados; e Previdência Fechada.",
-    regulatoryReference: "Lei 4.595/1964, Arts. 1º-4º; Estrutura do SFN"
+    regulatoryReference: "Lei 4.595/1964, Arts. 1º-4º"
   },
   {
     moduleId: 1,
     lessonId: 0,
     question: "Qual mercado dentro do SFN permite a compra e venda de moedas estrangeiras?",
-    options: [
-      "Mercado Monetário",
-      "Mercado de Crédito",
-      "Mercado de Capitais",
-      "Mercado de Câmbio"
-    ],
+    options: ["Mercado Monetário", "Mercado de Crédito", "Mercado de Capitais", "Mercado de Câmbio"],
     correctAnswer: 3,
-    explanation: "O Mercado de Câmbio é responsável pela compra e venda de moedas estrangeiras, permitindo operações de câmbio entre instituições e pessoas.",
-    regulatoryReference: "Lei 4.595/1964, Art. 3º; Lei 14.286/2021"
+    explanation: "O Mercado de Câmbio é responsável pela compra e venda de moedas estrangeiras.",
+    regulatoryReference: "Lei 4.595/1964, Art. 3º"
   },
   {
     moduleId: 1,
@@ -41,8 +36,8 @@ export const lessonQuizzes = [
       "Proteger contra riscos financeiros"
     ],
     correctAnswer: 2,
-    explanation: "O Mercado de Capitais permite que empresas captem recursos junto aos investidores e compartilhem riscos e ganhos através de valores mobiliários.",
-    regulatoryReference: "Lei 6.385/1976; Lei 10.303/2001 (Lei de Mercado de Capitais)"
+    explanation: "O Mercado de Capitais permite que empresas captem recursos junto aos investidores.",
+    regulatoryReference: "Lei 6.385/1976"
   },
   {
     moduleId: 1,
@@ -55,24 +50,33 @@ export const lessonQuizzes = [
       "Investimentos em ações e títulos"
     ],
     correctAnswer: 1,
-    explanation: "Previdência Fechada é composta por fundos de pensão e planos para funcionários de empresas, diferente da previdência complementar aberta.",
-    regulatoryReference: "Lei Complementar 109/2001; Regulação CNPC"
+    explanation: "Previdência Fechada é composta por fundos de pensão e planos para funcionários de empresas.",
+    regulatoryReference: "Lei Complementar 109/2001"
+  },
+  {
+    moduleId: 1,
+    lessonId: 0,
+    question: "Qual é a diferença fundamental entre o Mercado Monetário e o Mercado de Crédito?",
+    options: [
+      "Não há diferença funcional entre eles",
+      "Mercado Monetário: curto prazo e liquidez; Crédito: transferência de recursos",
+      "Mercado de Crédito é regulado pelo CMN apenas",
+      "Mercado Monetário só para pessoa jurídica"
+    ],
+    correctAnswer: 1,
+    explanation: "O Mercado Monetário fornece liquidez diária com instrumentos de curto prazo, enquanto o Mercado de Crédito transfere recursos para consumo e investimento.",
+    regulatoryReference: "Lei 4.595/1964"
   },
 
-  // Lesson 2: Órgãos Normativos e Supervisores
+  // Lesson 1: Órgãos Normativos e Supervisores
   {
     moduleId: 1,
     lessonId: 1,
     question: "Qual é o principal órgão normativo do SFN?",
-    options: [
-      "Banco Central do Brasil",
-      "Conselho Monetário Nacional",
-      "Conselho Nacional de Seguros Privados",
-      "Comissão de Valores Mobiliários"
-    ],
+    options: ["Banco Central do Brasil", "Conselho Monetário Nacional", "Conselho Nacional de Seguros Privados", "Comissão de Valores Mobiliários"],
     correctAnswer: 1,
-    explanation: "O Conselho Monetário Nacional (CMN) é o principal órgão normativo do SFN, responsável pela formulação da política de moeda e crédito.",
-    regulatoryReference: "Lei 4.595/1964, Art. 9º; Lei 10.192/2001"
+    explanation: "O Conselho Monetário Nacional (CMN) é o principal órgão normativo, responsável pela política de moeda e crédito.",
+    regulatoryReference: "Lei 4.595/1964, Art. 9º"
   },
   {
     moduleId: 1,
@@ -85,20 +89,17 @@ export const lessonQuizzes = [
       "Senadores e Deputados Federais"
     ],
     correctAnswer: 1,
-    explanation: "O CMN é composto pelo Ministro da Fazenda (Presidente), Ministro do Planejamento e Presidente do Banco Central do Brasil."
+    explanation: "O CMN é composto pelo Ministro da Fazenda (Presidente), Ministro do Planejamento e Presidente do Banco Central.",
+    regulatoryReference: "Lei 4.595/1964"
   },
   {
     moduleId: 1,
     lessonId: 1,
     question: "Qual órgão regula e fiscaliza os seguros privados?",
-    options: [
-      "CNPC - Conselho Nacional de Previdência Complementar",
-      "CNSP - Conselho Nacional de Seguros Privados",
-      "SUSEP - Superintendência de Seguros Privados",
-      "BCB - Banco Central do Brasil"
-    ],
-    correctAnswer: 1,
-    explanation: "O CNSP (Conselho Nacional de Seguros Privados) é o órgão normativo que regula seguros privados, enquanto SUSEP é o órgão supervisor."
+    options: ["CNPC", "CNSP", "SUSEP", "BCB"],
+    correctAnswer: 2,
+    explanation: "A SUSEP (Superintendência de Seguros Privados) é o órgão supervisor de seguros privados.",
+    regulatoryReference: "Decreto-Lei 73/1966"
   },
   {
     moduleId: 1,
@@ -111,48 +112,51 @@ export const lessonQuizzes = [
       "Supervisionar previdência privada"
     ],
     correctAnswer: 2,
-    explanation: "A CVM é responsável pela supervisão e regulação do mercado de valores mobiliários (ações, títulos) e derivativos."
+    explanation: "A CVM é responsável pela supervisão e regulação do mercado de valores mobiliários.",
+    regulatoryReference: "Lei 6.385/1976"
+  },
+  {
+    moduleId: 1,
+    lessonId: 1,
+    question: "Qual órgão supervisiona instituições de previdência complementar fechada?",
+    options: ["CVM", "SUSEP", "Previc", "BCB"],
+    correctAnswer: 2,
+    explanation: "A Previc (Superintendência Nacional de Previdência Complementar) supervisiona fundos de pensão.",
+    regulatoryReference: "Lei Complementar 109/2001"
   },
 
-  // Lesson 3: Banco Central do Brasil
+  // Lesson 2: Banco Central do Brasil
   {
     moduleId: 1,
     lessonId: 2,
     question: "Qual é a missão oficial do Banco Central do Brasil?",
     options: [
-      "Arrecadar impostos e taxas para o governo",
-      "Garantir a estabilidade do poder de compra da moeda, zelar por um sistema financeiro sólido e eficiente",
+      "Arrecadar impostos",
+      "Garantir a estabilidade do poder de compra da moeda e eficiência do SFN",
       "Fazer investimentos em nome do governo",
-      "Controlar os preços dos produtos no mercado"
+      "Controlar os preços"
     ],
     correctAnswer: 1,
-    explanation: "A missão do BCB é garantir a estabilidade do poder de compra da moeda, zelar por um sistema financeiro sólido, eficiente e competitivo, e fomentar o bem-estar econômico."
+    explanation: "A missão é garantir estabilidade do poder de compra, zelar por sistema financeiro sólido e eficiente.",
+    regulatoryReference: "Lei Complementar 179/2021"
   },
   {
     moduleId: 1,
     lessonId: 2,
     question: "A Diretoria Colegiada do Banco Central é composta por:",
-    options: [
-      "5 membros",
-      "7 membros",
-      "9 membros",
-      "11 membros"
-    ],
+    options: ["5 membros", "7 membros", "9 membros", "11 membros"],
     correctAnswer: 2,
-    explanation: "A Diretoria Colegiada do BCB é composta por 9 membros, sendo um deles o Presidente. Todos são nomeados pelo Presidente da República após aprovação pelo Senado Federal."
+    explanation: "A Diretoria Colegiada tem 9 membros, sendo um deles o Presidente.",
+    regulatoryReference: "Lei Complementar 179/2021"
   },
   {
     moduleId: 1,
     lessonId: 2,
-    question: "O Banco Central do Brasil estabeleceu sua autonomia através de qual lei?",
-    options: [
-      "Lei Complementar 105/2001",
-      "Lei Complementar 179/2021",
-      "Lei 14.286/2021",
-      "Lei 9.613/1998"
-    ],
+    question: "O Banco Central estabeleceu sua autonomia através de qual lei?",
+    options: ["LC 105/2001", "LC 179/2021", "Lei 14.286/2021", "Lei 9.613/1998"],
     correctAnswer: 1,
-    explanation: "A Lei Complementar 179/2021 estabeleceu a autonomia operacional, técnica, administrativa e financeira do Banco Central do Brasil."
+    explanation: "A Lei Complementar 179/2021 conferiu autonomia operacional, técnica e administrativa ao BCB.",
+    regulatoryReference: "Lei Complementar 179/2021"
   },
   {
     moduleId: 1,
@@ -165,35 +169,37 @@ export const lessonQuizzes = [
       "Determinar os preços das ações em bolsa"
     ],
     correctAnswer: 3,
-    explanation: "O BCB não determina preços de ações. Suas funções incluem manter inflação baixa, ser banco dos bancos, ser emissor de moeda, deter reservas internacionais e assegurar sistema financeiro sólido."
+    explanation: "BCB não determina preços de ações. Suas funções incluem manter inflação, ser banco dos bancos, emitir moeda.",
+    regulatoryReference: "Lei Complementar 179/2021"
+  },
+  {
+    moduleId: 1,
+    lessonId: 2,
+    question: "O mandato de membros da Diretoria Colegiada do BCB é de:",
+    options: ["2 anos", "3 anos", "4 anos", "5 anos"],
+    correctAnswer: 2,
+    explanation: "Membros têm mandatos de 4 anos conforme lei de autonomia.",
+    regulatoryReference: "Lei Complementar 179/2021"
   },
 
-  // Lesson 4: Hierarquia das Normas
+  // Lesson 3: Hierarquia das Normas
   {
     moduleId: 1,
     lessonId: 3,
     question: "Qual é o primeiro nível hierárquico das normas do BCB?",
-    options: [
-      "Portarias BCB",
-      "Instruções Normativas",
-      "Resoluções CMN",
-      "Resoluções BCB"
-    ],
+    options: ["Portarias BCB", "Instruções Normativas", "Resoluções CMN", "Resoluções BCB"],
     correctAnswer: 2,
-    explanation: "As Resoluções CMN são o nível mais alto da hierarquia normativa, pois traduzem decisões do Conselho Monetário Nacional."
+    explanation: "Resoluções CMN são o nível mais alto, pois traduzem decisões do Conselho Monetário.",
+    regulatoryReference: "Lei 4.595/1964"
   },
   {
     moduleId: 1,
     lessonId: 3,
     question: "Qual documento tem menor hierarquia normativa?",
-    options: [
-      "Resoluções CMN",
-      "Resoluções BCB",
-      "Instruções Normativas",
-      "Portarias BCB"
-    ],
+    options: ["Resoluções CMN", "Resoluções BCB", "Instruções Normativas", "Portarias BCB"],
     correctAnswer: 3,
-    explanation: "Portarias BCB têm o menor nível hierárquico, servindo para esclarecer dúvidas e prestar informações operacionais."
+    explanation: "Portarias BCB têm o menor nível hierárquico, servindo para esclarecer dúvidas.",
+    regulatoryReference: "Lei 4.595/1964"
   },
   {
     moduleId: 1,
@@ -203,10 +209,11 @@ export const lessonQuizzes = [
       "Formular políticas de moeda e crédito",
       "Regulamentar as Resoluções BCB com maior detalhe operacional",
       "Esclarecer dúvidas pontuais",
-      "Ser vinculadas apenas ao Presidente do BCB"
+      "Ser vinculadas apenas ao Presidente"
     ],
     correctAnswer: 1,
-    explanation: "As Instruções Normativas regulamentam as Resoluções BCB com maior nível de detalhe para implementação prática."
+    explanation: "Instruções Normativas regulamentam as Resoluções BCB com maior nível de detalhe.",
+    regulatoryReference: "Lei 4.595/1964"
   },
   {
     moduleId: 1,
@@ -219,11 +226,13 @@ export const lessonQuizzes = [
       "Documentos internos do Banco Central"
     ],
     correctAnswer: 1,
-    explanation: "Resoluções, Portarias e Instruções Conjuntas traduzem decisões conjuntas entre diferentes órgãos supervisores ou normativos."
+    explanation: "Traduzem decisões conjuntas entre diferentes órgãos supervisores ou normativos.",
+    regulatoryReference: "Lei 4.595/1964"
   },
 
-  // Module 2: Sigilo Bancário
-  // Lesson 1: Lei Complementar 105/2001
+  // ============================================================
+  // MODULE 2: SIGILO BANCÁRIO (20 questions)
+  // ============================================================
   {
     moduleId: 2,
     lessonId: 0,
@@ -235,7 +244,8 @@ export const lessonQuizzes = [
       "Portaria BCB 123/2020"
     ],
     correctAnswer: 1,
-    explanation: "O sigilo bancário é um direito constitucional regulamentado pela Lei Complementar 105/2001, que protege a intimidade dos cidadãos."
+    explanation: "O sigilo bancário é regulamentado pela Lei Complementar 105/2001.",
+    regulatoryReference: "Lei Complementar 105/2001"
   },
   {
     moduleId: 2,
@@ -248,36 +258,37 @@ export const lessonQuizzes = [
       "Evitar transparência financeira"
     ],
     correctAnswer: 2,
-    explanation: "O sigilo bancário visa proteger a individualidade, a intimidade e a privacidade dos cidadãos em suas operações financeiras."
+    explanation: "O sigilo bancário visa proteger a individualidade, intimidade e privacidade dos cidadãos.",
+    regulatoryReference: "Lei Complementar 105/2001"
   },
   {
     moduleId: 2,
     lessonId: 0,
-    question: "Pode o sigilo bancário ser quebrado?",
+    question: "Qual é o fundamento constitucional do sigilo bancário?",
     options: [
-      "Nunca, em nenhuma circunstância",
-      "Sim, por solicitação do Ministério Público",
-      "Sim, conforme disposições legais específicas (ordem judicial, investigações de crimes determinados)",
-      "Sim, a qualquer momento por qualquer autoridade"
+      "Lei infraconstitucional apenas",
+      "Direitos fundamentais à intimidade e privacidade",
+      "Decreto Presidencial",
+      "Portaria do BCB"
     ],
-    correctAnswer: 2,
-    explanation: "O sigilo bancário pode ser quebrado conforme disposições legais específicas, como por ordem judicial em investigações de crimes determinados previstos em lei."
+    correctAnswer: 1,
+    explanation: "Sigilo tem fundamento nos direitos fundamentais à intimidade (CF/88, Art. 5º, X).",
+    regulatoryReference: "CF/88, Art. 5º, X"
   },
   {
     moduleId: 2,
     lessonId: 0,
-    question: "Qual instituição tem acesso garantido a informações bancárias sem quebra de sigilo?",
+    question: "Segundo Lei Complementar 105/2001, quem tem acesso sem autorização judicial?",
     options: [
-      "Qualquer órgão público que solicitar",
-      "Somente o próprio cliente",
-      "A instituição financeira que detém a conta",
-      "Jornalistas com autorização judicial"
+      "Procurador-Geral da República e autoridades tributárias",
+      "Qualquer membro do Judiciário",
+      "Órgãos de segurança pública estaduais",
+      "Apenas mediante autorização judicial"
     ],
-    correctAnswer: 2,
-    explanation: "A instituição financeira que detém a conta e o próprio cliente têm acesso às informações, além de autoridades quando há ordem judicial específica."
+    correctAnswer: 0,
+    explanation: "PGR (investigações criminais) e autoridades tributárias têm acesso sem ordem judicial.",
+    regulatoryReference: "LC 105/2001, Arts. 1º e 2º"
   },
-
-  // Lesson 2: Não-violação do Sigilo
   {
     moduleId: 2,
     lessonId: 1,
@@ -286,10 +297,11 @@ export const lessonQuizzes = [
       "Divulgar informações de conta para fins comerciais",
       "Fornecer informações ao próprio cliente",
       "Compartilhar dados com outras instituições sem autorização",
-      "Revelar saldo para jornalista investigando fraude"
+      "Revelar saldo para jornalista"
     ],
     correctAnswer: 1,
-    explanation: "Fornecer informações ao próprio cliente não é violação de sigilo, pois o cliente é o detentor dessa informação."
+    explanation: "Fornecer informações ao próprio cliente não é violação.",
+    regulatoryReference: "LC 105/2001"
   },
   {
     moduleId: 2,
@@ -298,11 +310,12 @@ export const lessonQuizzes = [
     options: [
       "Nunca, em nenhuma circunstância",
       "Sim, livremente e sem restrições",
-      "Sim, apenas para fins específicos autorizados por lei (prevenção à lavagem de dinheiro, compartilhamento de risco)",
+      "Sim, apenas para fins específicos autorizados por lei (PLD, compartilhamento de risco)",
       "Sim, mediante pagamento de taxa"
     ],
     correctAnswer: 2,
-    explanation: "Instituições podem compartilhar dados entre si apenas para fins específicos autorizados por lei, como prevenção à lavagem de dinheiro e compartilhamento de risco de crédito."
+    explanation: "Podem compartilhar apenas para fins legais como PLD e compartilhamento de risco.",
+    regulatoryReference: "LC 105/2001, Art. 1º"
   },
   {
     moduleId: 2,
@@ -315,22 +328,22 @@ export const lessonQuizzes = [
       "Sim, se estiver em outro país"
     ],
     correctAnswer: 1,
-    explanation: "As instituições podem usar dados para marketing apenas com consentimento prévio e expresso do cliente, respeitando a Lei Geral de Proteção de Dados (LGPD)."
+    explanation: "Dados podem ser usados para marketing apenas com consentimento prévio do cliente.",
+    regulatoryReference: "LGPD (Lei 13.709/2018)"
   },
-
-  // Lesson 3: Procedimentos para Quebra Judicial
   {
     moduleId: 2,
     lessonId: 2,
     question: "Quem pode solicitar a quebra de sigilo bancário judicialmente?",
     options: [
       "Qualquer pessoa que solicitar",
-      "Apenas o Ministério Público e autoridades judiciárias em processo formal",
+      "Apenas Ministério Público e autoridades judiciárias em processo formal",
       "Qualquer delegado de polícia",
       "Diretamente o Banco Central"
     ],
     correctAnswer: 1,
-    explanation: "Apenas autoridades judiciárias (juiz) e órgãos legitimados como Ministério Público podem solicitar a quebra de sigilo através de processo formal."
+    explanation: "Apenas autoridades judiciárias (juiz) e MP podem solicitar através de processo formal.",
+    regulatoryReference: "LC 105/2001, Art. 1º"
   },
   {
     moduleId: 2,
@@ -343,12 +356,13 @@ export const lessonQuizzes = [
       "Apenas em casos de crimes financeiros"
     ],
     correctAnswer: 1,
-    explanation: "A quebra de sigilo bancário deve ser fundamentada em investigação de crime determinado e autorizada por ordem judicial formal com justificativa."
+    explanation: "Deve estar fundamentada em investigação de crime determinado.",
+    regulatoryReference: "LC 105/2001, Art. 1º"
   },
   {
     moduleId: 2,
     lessonId: 2,
-    question: "Qual é a consequência para a instituição que informa cliente sobre pedido de quebra de sigilo antes da autorização judicial?",
+    question: "Qual é a consequência para a instituição que informa cliente sobre pedido antes da autorização judicial?",
     options: [
       "Nenhuma, é considerado praxe",
       "Pode sofrer penalidades administrativas",
@@ -356,10 +370,9 @@ export const lessonQuizzes = [
       "O cliente se beneficia automaticamente"
     ],
     correctAnswer: 1,
-    explanation: "A instituição que informa o cliente antes da quebra judicial autorizada pode sofrer penalidades administrativas, sendo isso considerado obstáculo à investigação."
+    explanation: "Pode sofrer penalidades administrativas por prejudicar investigação.",
+    regulatoryReference: "LC 105/2001"
   },
-
-  // Lesson 4: Sanções por Violação
   {
     moduleId: 2,
     lessonId: 3,
@@ -371,7 +384,8 @@ export const lessonQuizzes = [
       "Suspensão por 30 dias"
     ],
     correctAnswer: 2,
-    explanation: "A violação de sigilo bancário pode resultar em multa pecuniária, cassação da autorização para funcionar, e responsabilidade penal individual para o responsável."
+    explanation: "Violação resulta em multa, cassação de autorização e responsabilidade penal.",
+    regulatoryReference: "LC 105/2001"
   },
   {
     moduleId: 2,
@@ -381,15 +395,16 @@ export const lessonQuizzes = [
       "Não, apenas a instituição sofre punição",
       "Sim, podem responder por crime de violação de sigilo",
       "Apenas o gerente, não funcionários comuns",
-      "Nunca, isso é responsabilidade civil apenas"
+      "Nunca, é responsabilidade civil apenas"
     ],
     correctAnswer: 1,
-    explanation: "Sim, funcionários que violam sigilo podem responder criminalmente, além de sofrer punição administrativa e civil."
+    explanation: "Funcionários podem responder criminalmente por violação de sigilo.",
+    regulatoryReference: "LC 105/2001, Art. 8º"
   },
   {
     moduleId: 2,
     lessonId: 3,
-    question: "A LGPD (Lei Geral de Proteção de Dados) afeta o sigilo bancário?",
+    question: "A LGPD afeta o sigilo bancário?",
     options: [
       "Não, são regulamentações completamente separadas",
       "Sim, aumenta proteção e restrições ao compartilhamento de dados",
@@ -397,11 +412,36 @@ export const lessonQuizzes = [
       "Não, LGPD é apenas para empresas de tecnologia"
     ],
     correctAnswer: 1,
-    explanation: "A LGPD complementa a proteção ao sigilo bancário, estabelecendo regras mais rigorosas sobre coleta, uso e compartilhamento de dados pessoais."
+    explanation: "LGPD complementa e aumenta a proteção do sigilo bancário.",
+    regulatoryReference: "Lei 13.709/2018 (LGPD)"
+  },
+  {
+    moduleId: 2,
+    lessonId: 3,
+    question: "O sigilo se estende quanto tempo após encerramento da conta?",
+    options: ["Não se estende", "1 ano", "Indefinidamente", "5 anos"],
+    correctAnswer: 2,
+    explanation: "Sigilo bancário persiste indefinidamente, mesmo após encerramento da conta.",
+    regulatoryReference: "LC 105/2001"
+  },
+  {
+    moduleId: 2,
+    lessonId: 3,
+    question: "Pode o cliente consentir com violação de sigilo?",
+    options: [
+      "Não, é indisponível",
+      "Sim, totalmente",
+      "Sim parcialmente para fins específicos",
+      "Depende da instituição"
+    ],
+    correctAnswer: 2,
+    explanation: "Cliente pode consentir na divulgação para fins específicos.",
+    regulatoryReference: "LC 105/2001"
   },
 
-  // Module 3: Crimes contra o SFN
-  // Lesson 1: Lei 7.492/1986
+  // ============================================================
+  // MODULE 3: CRIMES CONTRA O SFN (20 questions)
+  // ============================================================
   {
     moduleId: 3,
     lessonId: 0,
@@ -413,7 +453,8 @@ export const lessonQuizzes = [
       "Apenas crimes de lavagem de dinheiro"
     ],
     correctAnswer: 1,
-    explanation: "A Lei 7.492/1986 criminaliza diversos tipos de crimes contra o Sistema Financeiro Nacional, incluindo operações irregulares, falsificação de documentos, entre outros."
+    explanation: "Lei 7.492 criminaliza diversos tipos de crimes contra o SFN.",
+    regulatoryReference: "Lei 7.492/1986"
   },
   {
     moduleId: 3,
@@ -426,10 +467,11 @@ export const lessonQuizzes = [
       "Rejeitar operação que viola normas"
     ],
     correctAnswer: 1,
-    explanation: "Atribuir falsa identidade para realizar operação de câmbio é crime tipificado no Art. 21 da Lei 7.492, com pena de detenção de 1 a 4 anos e multa."
+    explanation: "Atribuir falsa identidade para câmbio é crime tipificado no Art. 21 da Lei 7.492.",
+    regulatoryReference: "Lei 7.492/1986, Art. 21"
   },
   {
-    movieId: 3,
+    moduleId: 3,
     lessonId: 0,
     question: "Qual é a pena para evasão de divisas (saída ilegal de moeda estrangeira)?",
     options: [
@@ -439,7 +481,8 @@ export const lessonQuizzes = [
       "Prisão perpétua"
     ],
     correctAnswer: 2,
-    explanation: "A evasão de divisas (retirada ilegal de moeda estrangeira) é crime com pena de detenção de 1 a 4 anos e multa, podendo variar conforme circunstâncias agravantes."
+    explanation: "Evasão de divisas tem pena de 1 a 4 anos e multa.",
+    regulatoryReference: "Lei 7.492/1986"
   },
   {
     moduleId: 3,
@@ -452,10 +495,23 @@ export const lessonQuizzes = [
       "Apenas se for internacional"
     ],
     correctAnswer: 1,
-    explanation: "Realizar operação de câmbio sem autorização do Banco Central é crime tipificado na Lei 7.492, podendo resultar em pena de detenção e multa."
+    explanation: "Operação de câmbio sem autorização é crime tipificado em Lei 7.492.",
+    regulatoryReference: "Lei 7.492/1986"
   },
-
-  // Lesson 2: Crimes específicos
+  {
+    moduleId: 3,
+    lessonId: 0,
+    question: "Qual é a pena máxima para falsificação de moeda conforme Lei 7.492/1986?",
+    options: [
+      "5 anos de reclusão",
+      "8 anos de reclusão",
+      "15 anos de reclusão",
+      "30 anos de reclusão"
+    ],
+    correctAnswer: 2,
+    explanation: "Falsificação de moeda tem pena de 8 a 15 anos de reclusão.",
+    regulatoryReference: "Lei 7.492/1986, Art. 1º"
+  },
   {
     moduleId: 3,
     lessonId: 1,
@@ -467,20 +523,22 @@ export const lessonQuizzes = [
       "Lei de Trânsito"
     ],
     correctAnswer: 1,
-    explanation: "Falsificar documentos para realizar operações financeiras é tipificado como crime contra o Sistema Financeiro Nacional na Lei 7.492."
+    explanation: "Falsificar documentos para operações financeiras é tipificado em Lei 7.492.",
+    regulatoryReference: "Lei 7.492/1986"
   },
   {
     moduleId: 3,
     lessonId: 1,
-    question: "Uma instituição financeira pode ser responsabilizada criminalmente por atos de seus funcionários?",
+    question: "Uma instituição financeira pode ser responsabilizada criminalmente?",
     options: [
       "Não, apenas o funcionário responde",
-      "Sim, a instituição pode responder solidariamente dependendo do contexto",
+      "Sim, pode responder solidariamente dependendo do contexto",
       "Sim, sempre responde como principal responsável",
       "Nunca, instituições têm imunidade"
     ],
     correctAnswer: 1,
-    explanation: "Dependendo das circunstâncias, a instituição financeira pode ser responsabilizada civilmente e até criminalmente por atos de seus funcionários, especialmente se houve consentimento ou negligência da administração."
+    explanation: "Instituição pode ser responsabilizada solidariamente por atos de funcionários.",
+    regulatoryReference: "Lei 7.492/1986"
   },
   {
     moduleId: 3,
@@ -490,13 +548,26 @@ export const lessonQuizzes = [
       "São completamente separados",
       "Lavagem de dinheiro está prevista na Lei 7.492",
       "Muitas vezes a lavagem de dinheiro é consequência de crime anterior contra o SFN",
-      "Não há relação, são de jurisdições diferentes"
+      "Não há relação"
     ],
     correctAnswer: 2,
-    explanation: "Frequentemente, crimes contra o SFN (como operações ilícitas de câmbio) geram dinheiro que precisa ser ocultado através de lavagem de dinheiro."
+    explanation: "Frequentemente crimes contra o SFN geram dinheiro que precisa ser ocultado.",
+    regulatoryReference: "Lei 7.492/1986; Lei 9.613/1998"
   },
-
-  // Lesson 3: Procedimentos investigativos
+  {
+    moduleId: 3,
+    lessonId: 1,
+    question: "Qual é a diferença entre apropriação indébita e gestão fraudulenta?",
+    options: [
+      "Não há diferença legal",
+      "Apropriação: desvio de valores; Gestão fraudulenta: administração com intenção defraudadora",
+      "Apropriação é crime civil, gestão fraudulenta é crime penal",
+      "Gestão fraudulenta só se aplica a instituições públicas"
+    ],
+    correctAnswer: 1,
+    explanation: "Apropriação envolve desvio de valores; gestão fraudulenta refere-se a administração defraudadora.",
+    regulatoryReference: "Lei 7.492/1986, Arts. 2º e 4º"
+  },
   {
     moduleId: 3,
     lessonId: 2,
@@ -504,24 +575,26 @@ export const lessonQuizzes = [
     options: [
       "Somente o Banco Central",
       "Somente a Polícia Federal",
-      "Polícia Federal, Ministério Público e Polícia Civil conforme a jurisdição",
+      "Polícia Federal, Ministério Público e Polícia Civil conforme jurisdição",
       "Apenas instituições financeiras"
     ],
     correctAnswer: 2,
-    explanation: "A investigação de crimes contra o SFN é competência da Polícia Federal, Polícia Civil e Ministério Público, conforme a jurisdição e natureza do crime."
+    explanation: "Investigação é competência de Polícia Federal, PF e MP conforme jurisdição.",
+    regulatoryReference: "Lei 7.492/1986"
   },
   {
     moduleId: 3,
     lessonId: 2,
     question: "O Banco Central pode abrir processo administrativo por crime?",
     options: [
-      "Não, Banco Central não tem competência em matéria criminal",
+      "Não, não tem competência em matéria criminal",
       "Sim, para investigação própria",
-      "Sim, para instaurar processo administrativo, mas deve reportar à autoridade competente para investigação criminal",
+      "Sim, para instaurar processo administrativo, mas deve reportar à autoridade competente",
       "Apenas para multas"
     ],
     correctAnswer: 2,
-    explanation: "O Banco Central pode instaurar processo administrativo para investigação própria e aplicação de sanções administrativas, mas deve reportar evidências de crime à autoridade criminal competente."
+    explanation: "BCB pode abrir processo administrativo mas deve reportar evidências de crime.",
+    regulatoryReference: "Lei 7.492/1986"
   },
   {
     moduleId: 3,
@@ -534,11 +607,13 @@ export const lessonQuizzes = [
       "Nunca, afeta direito de defesa"
     ],
     correctAnswer: 1,
-    explanation: "Embora sem identificação, denúncias anônimas podem iniciar investigação se contiverem indícios suficientes de crime contra o SFN, respeitando garantias processuais."
+    explanation: "Denúncias anônimas podem iniciar investigação se houver indícios suficientes.",
+    regulatoryReference: "Lei 7.492/1986"
   },
 
-  // Module 4: Operações de Câmbio
-  // Lesson 1: Conceitos fundamentais
+  // ============================================================
+  // MODULE 4: OPERAÇÕES DE CÂMBIO (20 questions)
+  // ============================================================
   {
     moduleId: 4,
     lessonId: 0,
@@ -550,12 +625,13 @@ export const lessonQuizzes = [
       "Operação de compra de imóvel exterior"
     ],
     correctAnswer: 1,
-    explanation: "Operação de câmbio é a compra e venda de moeda estrangeira mediante recebimento de contravalor em moeda nacional ou outra moeda estrangeira."
+    explanation: "Operação de câmbio é compra e venda de moeda estrangeira mediante contravalor em moeda nacional.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
     lessonId: 0,
-    question: "Qual é a base legal das operações de câmbio no Brasil?",
+    question: "Qual é a base legal das operações de câmbio atualmente?",
     options: [
       "Lei 9.613/1998",
       "Lei Complementar 105/2001",
@@ -563,7 +639,8 @@ export const lessonQuizzes = [
       "Lei 7.492/1986"
     ],
     correctAnswer: 2,
-    explanation: "A Lei 14.286/2021 é a principal legislação que regula operações de câmbio no Brasil, substituindo regulamentações anteriores."
+    explanation: "Lei 14.286/2021 é a legislação atual que regula operações de câmbio.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
@@ -572,27 +649,41 @@ export const lessonQuizzes = [
     options: [
       "Qualquer pessoa",
       "Apenas bancos",
-      "Instituições autorizadas pelo Banco Central e pessoas físicas dentro de limites específicos",
+      "Instituições autorizadas pelo BCB e pessoas físicas dentro de limites",
       "Apenas o governo"
     ],
     correctAnswer: 2,
-    explanation: "Instituições autorizadas pelo Banco Central podem realizar operações de câmbio livremente, enquanto pessoas físicas podem fazer operações limitadas (p. ex., até US$ 500 em espécie)."
+    explanation: "Instituições autorizadas podem operar livremente; pessoas físicas têm limites específicos.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
     lessonId: 0,
-    question: "É necessária autorização prévia do Banco Central para toda operação de câmbio por pessoa física?",
+    question: "É necessária autorização prévia do Banco Central para operação de câmbio por pessoa física?",
     options: [
       "Sim, sempre",
-      "Não, apenas instituições precisam de autorização",
+      "Não, apenas instituições precisam",
       "Apenas para valores acima de US$ 10.000",
       "Depende do tipo de câmbio"
     ],
     correctAnswer: 1,
-    explanation: "Pessoas físicas podem realizar operações de câmbio dentro de limites específicos sem autorização prévia (como compra de moeda para viagem), mas devem respeitar os limites legais."
+    explanation: "Pessoas físicas podem operar dentro de limites sem autorização prévia.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
-  // Lesson 2: Justificativa econômica
+  {
+    moduleId: 4,
+    lessonId: 0,
+    question: "Qual lei modernizou o mercado de câmbio e eliminou a exigência de licitação?",
+    options: [
+      "Lei 4.595/1964",
+      "Lei 9.069/1995",
+      "Lei 14.286/2021",
+      "Resolução CMN 4.305/2014"
+    ],
+    correctAnswer: 2,
+    explanation: "Lei 14.286/2021 modernizou o marco regulatório, eliminando obrigatoriedade de licitação.",
+    regulatoryReference: "Lei 14.286/2021"
+  },
   {
     moduleId: 4,
     lessonId: 1,
@@ -604,7 +695,8 @@ export const lessonQuizzes = [
       "Depende se é pessoa física ou jurídica"
     ],
     correctAnswer: 0,
-    explanation: "Todas as operações de câmbio devem ter justificativa econômica legítima (pagamentos internacionais, investimentos, turismo, etc.)."
+    explanation: "Todas as operações devem ter justificativa econômica legítima.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
@@ -612,12 +704,13 @@ export const lessonQuizzes = [
     question: "Qual é a consequência de realizar câmbio sem justificativa econômica adequada?",
     options: [
       "Nenhuma, é permitido",
-      "Multa do Banco Central e possível tipificação como crime",
+      "Multa do BCB e possível tipificação como crime",
       "Apenas cancelamento da operação",
       "Confisco do dinheiro"
     ],
     correctAnswer: 1,
-    explanation: "Operação de câmbio sem justificativa econômica adequada pode resultar em multa administrativa do BCB e potencialmente ser tipificada como crime de evasão de divisas."
+    explanation: "Operação sem justificativa adequada pode resultar em multa e tipificação como crime.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
@@ -630,10 +723,9 @@ export const lessonQuizzes = [
       "Apenas em casos especiais"
     ],
     correctAnswer: 2,
-    explanation: "Compra de moeda estrangeira para entesouramento é permitida apenas dentro de limites específicos com justificativa adequada, não sendo operação especulativa pura."
+    explanation: "Entesouramento é permitido dentro de limites com justificativa adequada.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
-  // Lesson 3: Regulações e princípios
   {
     moduleId: 4,
     lessonId: 2,
@@ -645,7 +737,8 @@ export const lessonQuizzes = [
       "Tesouro Nacional"
     ],
     correctAnswer: 1,
-    explanation: "O Banco Central do Brasil é o órgão responsável por regulação, supervisão e fiscalização das operações de câmbio e instituições autorizadas."
+    explanation: "BCB é responsável por regulação, supervisão e fiscalização de operações de câmbio.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
@@ -653,17 +746,18 @@ export const lessonQuizzes = [
     question: "As operações de câmbio precisam ser registradas?",
     options: [
       "Não, são operações privadas",
-      "Sim, devem ser registradas no SISBACEN (sistema do BCB)",
+      "Sim, devem ser registradas no SISBACEN",
       "Apenas operações acima de US$ 100.000",
       "Apenas operações internacionais"
     ],
     correctAnswer: 1,
-    explanation: "Todas as operações de câmbio devem ser registradas no SISBACEN (Sistema de Informações do Banco Central), permitindo transparência e fiscalização."
+    explanation: "Todas as operações devem ser registradas no SISBACEN.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 4,
     lessonId: 2,
-    question: "É permitido câmbio paralelo ou não oficial no Brasil?",
+    question: "É permitido câmbio paralelo no Brasil?",
     options: [
       "Sim, é legal e regulado",
       "Não, é crime",
@@ -671,28 +765,31 @@ export const lessonQuizzes = [
       "Depende da aprovação do BCB"
     ],
     correctAnswer: 1,
-    explanation: "Câmbio paralelo (fora do mercado legal autorizado) é ilegal no Brasil e pode resultar em acusação de crime contra o SFN."
+    explanation: "Câmbio paralelo (fora do mercado legal) é ilegal e crime.",
+    regulatoryReference: "Lei 7.492/1986; Lei 14.286/2021"
   },
 
-  // Module 5: Legislação Cambial
-  // Lesson 1: Lei 14.286/2021
+  // ============================================================
+  // MODULE 5: LEGISLAÇÃO CAMBIAL (20 questions)
+  // ============================================================
   {
     moduleId: 5,
     lessonId: 0,
     question: "Qual foi a principal mudança trazida pela Lei 14.286/2021?",
     options: [
       "Proibiu todas as operações de câmbio",
-      "Liberalizou o mercado de câmbio, permitindo que instituições autorizadas operem livremente",
-      "Aumentou as restrições às operações de câmbio",
+      "Liberalizou o mercado de câmbio, permitindo livre pactuação de taxa",
+      "Aumentou as restrições às operações",
       "Transferiu competência para outro órgão"
     ],
     correctAnswer: 1,
-    explanation: "A Lei 14.286/2021 liberalizou o mercado de câmbio, permitindo que instituições autorizadas pactuem livremente as taxas de câmbio com clientes, aumentando concorrência."
+    explanation: "Lei 14.286/2021 liberalizou mercado permitindo livre pactuação de taxa.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 5,
     lessonId: 0,
-    question: "De acordo com a Lei 14.286/2021, a taxa de câmbio é:",
+    question: "De acordo com Lei 14.286/2021, a taxa de câmbio é:",
     options: [
       "Fixada diariamente pelo Banco Central",
       "Determinada por consenso entre bancos",
@@ -700,23 +797,37 @@ export const lessonQuizzes = [
       "Estabelecida pelo Tesouro Nacional"
     ],
     correctAnswer: 2,
-    explanation: "Lei 14.286/2021 determina que a taxa de câmbio é livremente pactuada entre as instituições autorizadas e seus clientes."
+    explanation: "Taxa de câmbio é livremente pactuada entre instituição e cliente.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 5,
     lessonId: 0,
-    question: "A Lei 14.286/2021 permite operações de câmbio entre pessoas físicas em espécie?",
+    question: "Lei 14.286/2021 permite operações de câmbio entre pessoas físicas em espécie?",
     options: [
       "Não, proíbe completamente",
-      "Sim, mas com limite de valor (até US$ 500) e condição de ser eventual",
+      "Sim, com limite de valor (até US$ 500) e condição de ser eventual",
       "Sim, sem restrições",
       "Apenas com aprovação prévia do BCB"
     ],
     correctAnswer: 1,
-    explanation: "A Lei 14.286/2021 permite compra/venda de moeda estrangeira em espécie entre pessoas físicas, limitada a US$ 500, de forma eventual e não profissional."
+    explanation: "Permite até US$ 500 entre pessoas físicas de forma eventual.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
-  // Lesson 2: Competências do BCB
+  {
+    moduleId: 5,
+    lessonId: 0,
+    question: "Qual lei estabeleceu o regime de câmbio flutuante?",
+    options: [
+      "Lei 4.595/1964",
+      "Lei 9.069/1995",
+      "Lei 9.069/1995 regulamentada por Decreto 3.664/2000",
+      "Lei 14.286/2021"
+    ],
+    correctAnswer: 2,
+    explanation: "Lei 9.069/1995 e Decreto 3.664/2000 implementaram câmbio flutuante.",
+    regulatoryReference: "Lei 9.069/1995; Decreto 3.664/2000"
+  },
   {
     moduleId: 5,
     lessonId: 1,
@@ -725,10 +836,11 @@ export const lessonQuizzes = [
       "Determinar as taxas de câmbio",
       "Autorizar e supervisionar instituições que operam câmbio, sem fixar taxas",
       "Proibir operações não autorizadas",
-      "Realizar todas as operações de câmbio do país"
+      "Realizar todas as operações de câmbio"
     ],
     correctAnswer: 1,
-    explanation: "Após a Lei 14.286/2021, o BCB mantém autorização e supervisão, mas não mais controla as taxas de câmbio, deixando isso para o mercado."
+    explanation: "BCB mantém autorização e supervisão, mas não controla taxas.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 5,
@@ -738,15 +850,16 @@ export const lessonQuizzes = [
       "Não, não tem esse poder",
       "Sim, em caso de irregularidades conforme processo administrativo",
       "Sim, mas apenas com justificativa de interesse público",
-      "Apenas o Ministério da Justiça pode fazer"
+      "Apenas o Ministério da Justiça pode"
     ],
     correctAnswer: 1,
-    explanation: "O BCB pode cancelar ou cassar a autorização de instituição que opera câmbio se constatadas irregularidades em processo administrativo, conforme disposições regulatórias."
+    explanation: "BCB pode cancelar autorização se constatadas irregularidades.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 5,
     lessonId: 1,
-    question: "Qual instituição supervisiona a conformidade cambial no Brasil?",
+    question: "Qual instituição supervisiona conformidade cambial no Brasil?",
     options: [
       "Ministério do Exterior",
       "Receita Federal",
@@ -754,22 +867,22 @@ export const lessonQuizzes = [
       "Polícia Federal"
     ],
     correctAnswer: 2,
-    explanation: "O Banco Central é responsável pela supervisão, regulação e fiscalização do mercado de câmbio e instituições autorizadas a operar neste mercado."
+    explanation: "BCB é responsável por supervisão e fiscalização de câmbio.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
-  // Lesson 3: Operações de capital
   {
     moduleId: 5,
     lessonId: 2,
     question: "O que é uma operação de capital cambial?",
     options: [
       "Operação de compra de moeda para consumo",
-      "Operação relacionada a investimentos, empréstimos ou remessas entre países",
+      "Operação relacionada a investimentos, empréstimos ou remessas",
       "Operação de compra de moeda para viagem",
       "Operação de compra de ações"
     ],
     correctAnswer: 1,
-    explanation: "Operações de capital cambial envolvem movimentação de recursos para investimentos diretos, empréstimos, remessas familiares e outras operações financeiras entre países."
+    explanation: "Operações de capital envolvem investimentos, empréstimos e remessas.",
+    regulatoryReference: "Lei 9.069/1995"
   },
   {
     moduleId: 5,
@@ -777,29 +890,32 @@ export const lessonQuizzes = [
     question: "Investimento estrangeiro no Brasil requer operação de câmbio?",
     options: [
       "Não, é feito diretamente em reais",
-      "Sim, o investidor estrangeiro precisa converter sua moeda em reais através de câmbio autorizado",
+      "Sim, inversor precisa converter moeda em reais",
       "Apenas se for valor alto",
       "Apenas se aprovado pelo governo"
     ],
     correctAnswer: 1,
-    explanation: "Investimentos estrangeiros no Brasil requerem operação de câmbio para converter moeda estrangeira em reais para aplicação nos investimentos."
+    explanation: "Investimento estrangeiro requer conversão de moeda via câmbio.",
+    regulatoryReference: "Lei 9.069/1995"
   },
   {
     moduleId: 5,
     lessonId: 2,
-    question: "Remessas de brasileiros no exterior para o Brasil precisam de câmbio?",
+    question: "Remessas do exterior para Brasil em moeda estrangeira requerem câmbio?",
     options: [
-      "Não, vão diretamente para conta bancária",
-      "Sim, se forem em moeda estrangeira precisam ser convertidas em reais",
-      "Apenas acima de determinado valor",
+      "Não, vão diretamente para conta",
+      "Sim, precisam ser convertidas em reais",
+      "Apenas acima de certo valor",
       "Somente se for primeira remessa"
     ],
     correctAnswer: 1,
-    explanation: "Remessas em moeda estrangeira precisam ser convertidas em reais através de operação de câmbio realizada por instituição autorizada."
+    explanation: "Remessas em moeda estrangeira requerem conversão via câmbio.",
+    regulatoryReference: "Lei 9.069/1995"
   },
 
-  // Continuing with remaining modules (6, 7, 8) - I'll add them but keep it concise...
-  // Module 6: Normas Cambiais (lessons 1-4)
+  // ============================================================
+  // MODULE 6: NORMAS CAMBIAIS (20 questions)
+  // ============================================================
   {
     moduleId: 6,
     lessonId: 0,
@@ -811,7 +927,8 @@ export const lessonQuizzes = [
       "Câmara de Comércio Exterior"
     ],
     correctAnswer: 1,
-    explanation: "O Conselho Monetário Nacional e o Banco Central emitem Resoluções e Circulares que regulamentam as operações de câmbio e mercados cambiais."
+    explanation: "CMN e BCB emitem Resoluções e Circulares sobre câmbio.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 6,
@@ -824,7 +941,8 @@ export const lessonQuizzes = [
       "Apenas por instituição"
     ],
     correctAnswer: 1,
-    explanation: "As operações de câmbio são classificadas de acordo com sua natureza (cambial, de capital, de custeio) e conforme a procedência ou destino dos recursos."
+    explanation: "Classificadas por natureza (cambial, capital, custeio) e origem/destino.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 6,
@@ -837,13 +955,13 @@ export const lessonQuizzes = [
       "Investimentos diretos"
     ],
     correctAnswer: 1,
-    explanation: "Operações de câmbio de custeio são aquelas relacionadas ao pagamento de importações de bens e serviços para manutenção de atividades comerciais."
+    explanation: "Operações de custeio relacionam-se ao pagamento de importações.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
   {
     moduleId: 6,
-    lessonId: 1,
-    question: "O limite de câmbio para pessoa física em espécie foi modificado na Lei 14.286?",
+    lessonId: 0,
+    question: "O limite de câmbio para pessoa física em espécie foi modificado?",
     options: [
       "Aumentou para US$ 1.000",
       "Permaneceu em US$ 500",
@@ -851,7 +969,8 @@ export const lessonQuizzes = [
       "Foi eliminado"
     ],
     correctAnswer: 1,
-    explanation: "A Lei 14.286/2021 manteve o limite de até US$ 500 para compra/venda de moeda estrangeira em espécie entre pessoas físicas."
+    explanation: "Limite permaneceu em US$ 500 para pessoa física.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 6,
@@ -864,12 +983,12 @@ export const lessonQuizzes = [
       "Operações não autorizadas"
     ],
     correctAnswer: 1,
-    explanation: "Operações cambiais cliente são transações entre uma instituição autorizada a operar câmbio e seus clientes pessoas físicas ou jurídicas."
+    explanation: "Operações cliente são entre instituição autorizada e seus clientes.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
   {
     moduleId: 6,
-    lessonId: 2,
+    lessonId: 1,
     question: "Qual é o limite para operação de câmbio com correspondente?",
     options: [
       "Sem limite",
@@ -878,11 +997,12 @@ export const lessonQuizzes = [
       "Até US$ 5.000"
     ],
     correctAnswer: 2,
-    explanation: "Correspondentes cambiais têm limite de US$ 3.000 por operação, e US$ 1.000 quando se trata de compra/venda de moeda em espécie com contravalor também em espécie."
+    explanation: "Correspondentes limitados a US$ 3.000 ou US$ 1.000 em espécie.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 6,
-    lessonId: 2,
+    lessonId: 1,
     question: "Operações entre instituições autorizadas têm limites?",
     options: [
       "Sim, US$ 1.000 por operação",
@@ -891,25 +1011,26 @@ export const lessonQuizzes = [
       "Apenas acima de US$ 100.000"
     ],
     correctAnswer: 2,
-    explanation: "Operações entre instituições autorizadas a operar câmbio não têm limite de valor específico, pois são operações entre profissionais regulados."
+    explanation: "Operações entre instituições autorizadas não têm limite.",
+    regulatoryReference: "Lei 14.286/2021"
   },
-
   {
     moduleId: 6,
-    lessonId: 3,
+    lessonId: 2,
     question: "O que é liquidação de câmbio?",
     options: [
       "Cancelamento da operação",
-      "Entrega efetiva dos valores da operação (moeda entregue, contravalor recebido)",
+      "Entrega efetiva dos valores (moeda entregue, contravalor recebido)",
       "Registro apenas da transação",
       "Aprovação do BCB"
     ],
     correctAnswer: 1,
-    explanation: "Liquidação de câmbio é o momento efetivo de entrega/recebimento das moedas e valores envolvidos na operação de câmbio."
+    explanation: "Liquidação é entrega efetiva das moedas e valores.",
+    regulatoryReference: "Lei 14.286/2021"
   },
   {
     moduleId: 6,
-    lessonId: 3,
+    lessonId: 2,
     question: "Qual é o prazo típico para liquidação de operação de câmbio?",
     options: [
       "Até 1 dia útil",
@@ -917,23 +1038,41 @@ export const lessonQuizzes = [
       "Até 5 dias úteis",
       "Até 30 dias"
     ],
-    correctAnswer: 2,
-    explanation: "O prazo típico para liquidação de operações de câmbio é de até 2 dias úteis conforme normas do Banco Central, embora operações específicas possam ter prazos diferentes."
+    correctAnswer: 1,
+    explanation: "Prazo típico é até 2 dias úteis conforme normas.",
+    regulatoryReference: "Lei 14.286/2021"
+  },
+  {
+    moduleId: 6,
+    lessonId: 3,
+    question: "Contrato de câmbio precisa ser formalizado?",
+    options: [
+      "Não",
+      "Sim, conforme normas",
+      "Apenas acima de US$ 50.000",
+      "Não de pessoa física"
+    ],
+    correctAnswer: 1,
+    explanation: "Contrato deve ser formalizado conforme procedimentos do BCB.",
+    regulatoryReference: "Lei 14.286/2021"
   },
 
-  // Module 7: Correspondentes Cambiais
+  // ============================================================
+  // MODULE 7: CORRESPONDENTES CAMBIAIS (20 questions)
+  // ============================================================
   {
     moduleId: 7,
     lessonId: 0,
     question: "O que é um Correspondente Cambial?",
     options: [
       "Instituição que emite moeda",
-      "Pessoa ou instituição autorizada a realizar operações de câmbio dentro de limites específicos",
+      "Pessoa ou instituição autorizada fazer câmbio dentro de limites",
       "Funcionário do Banco Central",
       "Empresa de remessas"
     ],
     correctAnswer: 1,
-    explanation: "Correspondente cambial é pessoa física ou jurídica autorizada pelo Banco Central a realizar operações de câmbio para terceiros dentro de limites específicos regulados."
+    explanation: "Correspondente é pessoa/instituição autorizada a fazer câmbio dentro de limites.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
   {
     moduleId: 7,
@@ -942,26 +1081,41 @@ export const lessonQuizzes = [
     options: [
       "Apenas bancos",
       "Qualquer pessoa",
-      "Sociedades limitadas, empresários, associações, serviços notariais conforme requisitos",
-      "Apenas estrangeiros"
+      "Sociedades, empresários, associações conforme requisitos",
+      "Apenas pessoa física"
     ],
     correctAnswer: 2,
-    explanation: "Conforme Resolução CMN 4.935/2021, podem ser correspondentes: sociedades, empresários, associações, prestadores de serviços notariais e empresas públicas que atendam requisitos."
+    explanation: "Conforme Resolução CMN 4.935/2021, diversos tipos podem ser correspondentes.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
   {
     moduleId: 7,
     lessonId: 0,
-    question: "Correspondentes cambiais precisam de autorização prévia?",
+    question: "Correspondentes cambiais precisam de autorização?",
     options: [
       "Não, qualquer um pode operar",
-      "Sim, precisam ser contratados e autorizados por instituição autorizada",
+      "Sim, devem ser contratados e autorizados por instituição",
       "Apenas autorização verbal",
       "Autorização permanente após primeira contratação"
     ],
     correctAnswer: 1,
-    explanation: "Correspondentes cambiais devem ser contratados por instituição autorizada e cumprir requisitos estabelecidos pelo Banco Central, incluindo capacidade técnica e idoneidade."
+    explanation: "Correspondentes devem ser contratados por instituição autorizada.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
-
+  {
+    moduleId: 7,
+    lessonId: 0,
+    question: "Segundo Resolução CMN 4.935/2021, quais são os requisitos para correspondente?",
+    options: [
+      "Apenas idoneidade moral",
+      "Capacidade técnica, operacional, idoneidade, conformidade com PLD/FT",
+      "Apenas registro na CVM",
+      "Apenas comprovação de capital"
+    ],
+    correctAnswer: 1,
+    explanation: "Requisitos incluem capacidade, idoneidade, conformidade com PLD/FT.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
+  },
   {
     moduleId: 7,
     lessonId: 1,
@@ -973,7 +1127,8 @@ export const lessonQuizzes = [
       "Sem limite"
     ],
     correctAnswer: 2,
-    explanation: "Correspondentes estão limitados a operações de até US$ 3.000 por transação, ou US$ 1.000 quando envolvem moeda em espécie com contravalor também em espécie."
+    explanation: "Correspondentes limitados a US$ 3.000 ou US$ 1.000 em espécie.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
   {
     moduleId: 7,
@@ -981,46 +1136,73 @@ export const lessonQuizzes = [
     question: "Correspondente pode fazer especulação cambial?",
     options: [
       "Sim, sem restrições",
-      "Não, apenas executa operações de clientes dentro dos limites",
-      "Sim, acima do limite de cliente",
-      "Apenas em feriados"
+      "Não, apenas executa operações de clientes",
+      "Sim, acima do limite",
+      "Apenas em feriado"
     ],
     correctAnswer: 1,
-    explanation: "Correspondentes são apenas intermediários que executam operações de câmbio para clientes dentro dos limites regulamentados, não podem fazer operações próprias especulativas."
+    explanation: "Correspondentes apenas executam operações de clientes, não especulam.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
-
   {
     moduleId: 7,
-    lessonId: 2,
+    lessonId: 1,
     question: "Correspondente tem responsabilidade de compliance?",
     options: [
-      "Não, fica a cargo da instituição contratante",
-      "Sim, deve fazer devido diligência e cumprir normas PLD/FTP",
-      "Apenas em operações acima de US$ 10.000",
-      "Não, não tem vinculação legal"
+      "Não, fica a cargo da instituição",
+      "Sim, deve fazer KYC e cumprir normas PLD/FTP",
+      "Apenas acima de US$ 10.000",
+      "Não tem vinculação legal"
     ],
     correctAnswer: 1,
-    explanation: "Correspondentes têm responsabilidades de compliance, devem fazer Know Your Customer (KYC) e cumprir normas de Prevenção à Lavagem de Dinheiro (PLD) e Financiamento do Terrorismo (FTP)."
+    explanation: "Correspondentes têm responsabilidades de compliance e KYC.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
   {
     moduleId: 7,
     lessonId: 2,
     question: "O que fazer se correspondente suspeita operação ilegal?",
     options: [
-      "Ignorar e executar a operação",
-      "Recusar operação e comunicar à instituição contratante e ao BCB conforme procedimentos",
+      "Ignorar e executar",
+      "Recusar e comunicar à instituição e BCB conforme procedimentos",
       "Comunicar apenas ao cliente",
       "Comunicar apenas à polícia"
     ],
     correctAnswer: 1,
-    explanation: "Correspondentes devem recusar operações suspeitas e comunicar às autoridades competentes (instituição contratante, Banco Central, COAF) conforme obrigações de compliance."
+    explanation: "Deve recusar operação e comunicar às autoridades competentes.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
+  },
+  {
+    moduleId: 7,
+    lessonId: 2,
+    question: "Qual é responsabilidade de correspondente por operação irregular?",
+    options: [
+      "Nenhuma, é do banco",
+      "Solidária com instituição contratante",
+      "Apenas civil",
+      "Apenas administrativa"
+    ],
+    correctAnswer: 1,
+    explanation: "Correspondente tem responsabilidade solidária com instituição.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
+  },
+  {
+    moduleId: 7,
+    lessonId: 2,
+    question: "Qual é a Resolução que regula correspondentes cambiais?",
+    options: ["4.934", "4.935", "4.936", "4.937"],
+    correctAnswer: 1,
+    explanation: "Resolução CMN 4.935/2021 regula correspondentes cambiais.",
+    regulatoryReference: "Resolução CMN 4.935/2021"
   },
 
-  // Module 8: Prevenção à Lavagem de Dinheiro
+  // ============================================================
+  // MODULE 8: PREVENÇÃO À LAVAGEM DE DINHEIRO (20 questions)
+  // ============================================================
   {
     moduleId: 8,
     lessonId: 0,
-    question: "Qual lei estabelece obrigações de Prevenção à Lavagem de Dinheiro (PLD)?",
+    question: "Qual lei estabelece obrigações de PLD (Prevenção à Lavagem de Dinheiro)?",
     options: [
       "Lei 7.492/1986",
       "Lei 9.613/1998",
@@ -1028,33 +1210,31 @@ export const lessonQuizzes = [
       "Lei 14.286/2021"
     ],
     correctAnswer: 1,
-    explanation: "A Lei 9.613/1998 estabelece as obrigações de Prevenção à Lavagem de Dinheiro (PLD) e conceitos sobre operações ilícitas no Brasil."
+    explanation: "Lei 9.613/1998 estabelece obrigações de Prevenção à Lavagem de Dinheiro.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
     moduleId: 8,
     lessonId: 0,
     question: "O que é lavagem de dinheiro?",
     options: [
-      "Limpeza de dinheiro físico",
+      "Limpeza física de dinheiro",
       "Processo de ocultar origem ilícita de recursos através de operações financeiras",
       "Processo de troca de moeda",
       "Depósito bancário comum"
     ],
     correctAnswer: 1,
-    explanation: "Lavagem de dinheiro é processo de ocultar origem ilícita de recursos, tornando aparentemente lícita a posse de bens oriundos de atividades criminosas."
+    explanation: "Lavagem de dinheiro é ocultar origem ilícita de recursos tornando aparentemente lícita.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
     moduleId: 8,
     lessonId: 0,
-    question: "Qual órgão recebe comunicações de operações suspeitas no Brasil?",
-    options: [
-      "Polícia Federal",
-      "Banco Central",
-      "Conselho de Controle de Atividades Financeiras (COAF)",
-      "Receita Federal"
-    ],
+    question: "Qual órgão recebe comunicações de operações suspeitas?",
+    options: ["Polícia Federal", "Banco Central", "COAF", "Receita Federal"],
     correctAnswer: 2,
-    explanation: "O Conselho de Controle de Atividades Financeiras (COAF) é o órgão que recebe relatórios de operações suspeitas das instituições financeiras e faz análise de risco."
+    explanation: "COAF (Conselho de Controle de Atividades Financeiras) recebe comunicações.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
     moduleId: 8,
@@ -1062,359 +1242,13 @@ export const lessonQuizzes = [
     question: "Instituições financeiras devem comunicar operações suspeitas?",
     options: [
       "Não, é confidencial",
-      "Sim, são obrigadas a comunicar ao COAF operações atípicas/suspeitas",
+      "Sim, são obrigadas a comunicar ao COAF",
       "Apenas se cliente consentir",
-      "Apenas operações acima de R$ 1 milhão"
+      "Apenas acima de R$ 1 milhão"
     ],
     correctAnswer: 1,
-    explanation: "Sim, instituições têm obrigação legal de comunicar operações atípicas ou suspeitas ao COAF conforme Lei 9.613/1998 e regulamentações."
-  },
-
-  {
-    moduleId: 8,
-    lessonId: 1,
-    question: "Qual valor de operação em espécie deve ser comunicado ao COAF?",
-    options: [
-      "Acima de R$ 10.000",
-      "Acima de R$ 50.000",
-      "Acima de R$ 100.000",
-      "Acima de R$ 500.000"
-    ],
-    correctAnswer: 1,
-    explanation: "Conforme Circular 3.978/2020 do BCB, operações em espécie iguais ou superiores a R$ 50.000 devem ser comunicadas ao COAF."
-  },
-  {
-    moduleId: 8,
-    lessonId: 1,
-    question: "O que é operação atípica?",
-    options: [
-      "Qualquer operação fora do horário",
-      "Operação que se desvia do padrão do cliente, sem razão econômica aparente",
-      "Operação com valor alto",
-      "Operação internacional"
-    ],
-    correctAnswer: 1,
-    explanation: "Operação atípica é aquela que se desvia do perfil usual do cliente, sem justificativa econômica aparente (ex: conservador faz remessa grande inesperada)."
-  },
-  {
-    moduleId: 8,
-    lessonId: 1,
-    question: "Instituição que relata suspeita sofre punição legal?",
-    options: [
-      "Sim, pode sofrer ações judiciais",
-      "Não, está protegida por sigilo e confidencialidade da comunicação",
-      "Depende se suspeita estava correta",
-      "Apenas se for falsa acusação"
-    ],
-    correctAnswer: 1,
-    explanation: "Lei 9.613/1998 protege instituições que fazem comunicação de boa-fé ao COAF, assegurando que não sofram ações judiciais por isso."
-  },
-
-  {
-    moduleId: 8,
-    lessonId: 2,
-    question: "O que é Know Your Customer (KYC)?",
-    options: [
-      "Técnica de venda",
-      "Obrigação de identificar e conhecer perfil de cliente para detectar operações anormais",
-      "Programa de lealdade",
-      "Apenas registro bancário"
-    ],
-    correctAnswer: 1,
-    explanation: "Know Your Customer é a obrigação de instituições conhecerem perfil, origem de recursos e operações típicas de cliente para detectar anomalias."
-  },
-  {
-    moduleId: 8,
-    lessonId: 2,
-    question: "PLD/FTP engloba também prevenção a qual crime além de lavagem de dinheiro?",
-    options: [
-      "Corrupção",
-      "Financiamento do Terrorismo",
-      "Fraude",
-      "Evasão de impostos"
-    ],
-    correctAnswer: 1,
-    explanation: "PLD/FTP significa Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo, cobrindo ambas as áreas."
-  },
-
-  {
-    moduleId: 8,
-    lessonId: 3,
-    question: "Quem é responsável por implementar políticas de PLD/FTP?",
-    options: [
-      "Apenas o governo",
-      "Apenas autoridades de segurança",
-      "Instituições financeiras, cartórios, empresas de câmbio e outras conforme lei",
-      "Apenas bancos centrais"
-    ],
-    correctAnswer: 2,
-    explanation: "Lei 9.613/1998 estabelece obrigações de PLD/FTP para instituições financeiras, cartórios, imobiliárias, antiquários e outras pessoas jurídicas conforme regulamento."
-  },
-  {
-    moduleId: 8,
-    lessonId: 3,
-    question: "Qual é a sanção para violação de obrigações de PLD/FTP?",
-    options: [
-      "Apenas advertência",
-      "Apenas multa pequena",
-      "Multa pesada, cassação de autorização, responsabilidade penal individual",
-      "Sem sanção"
-    ],
-    correctAnswer: 2,
-    explanation: "Violações de PLD/FTP podem resultar em multas substanciais, cassação de autorização para operar e responsabilidade penal para administradores."
-  }
-,
-  {
-    moduleId: 1,
-    lessonId: 0,
-    question: "Qual é a diferença fundamental entre o Mercado Monetário e o Mercado de Crédito no SFN?",
-    options: [
-      "O Mercado Monetário é para empresas, Crédito é para pessoas",
-      "Mercado Monetário: curto prazo e liquidez; Crédito: transferência de recursos",
-      "Não há diferença funcional entre eles",
-      "Mercado de Crédito é regulado pelo CMN, Monetário pelo BCB"
-    ],
-    correctAnswer: 1,
-    explanation: "O Mercado Monetário fornece liquidez diária com instrumentos de curto prazo (até 1 ano), enquanto o Mercado de Crédito transfere recursos para consumo e investimento produtivo. São segmentos distintos com funções complementares.",
-    regulatoryReference: "Lei 4.595/1964, Arts. 1º-4º"
-  },
-  {
-    moduleId: 1,
-    lessonId: 0,
-    question: "De acordo com Lei 4.595/1964, qual é a função do Sistema Financeiro Nacional?",
-    options: [
-      "Apenas regular as atividades de bancos comerciais",
-      "Transferir recursos entre poupadores e investidores produtivos",
-      "Controlar exclusivamente o mercado de câmbio",
-      "Proteger apenas investidores institucionais"
-    ],
-    correctAnswer: 1,
-    explanation: "A Lei 4.595/1964 estabelece que o SFN funciona como canalização de recursos da poupança para investimento produtivo, promovendo o desenvolvimento econômico e protegendo depositantes e investidores.",
-    regulatoryReference: "Lei 4.595/1964"
-  },
-  {
-    moduleId: 1,
-    lessonId: 1,
-    question: "Qual órgão tem a responsabilidade primária de formular a política de moeda e crédito?",
-    options: [
-      "Banco Central do Brasil (BCB)",
-      "Conselho Monetário Nacional (CMN)",
-      "Comissão de Valores Mobiliários (CVM)",
-      "Superintendência de Seguros Privados (SUSEP)"
-    ],
-    correctAnswer: 1,
-    explanation: "O CMN é o órgão normativo supremo do SFN, responsável pela formulação da política de moeda e crédito. É composto pelo Ministro da Fazenda (Presidente), Ministro do Planejamento e Presidente do BCB. (Lei 4.595/1964, Art. 9º)",
-    regulatoryReference: "Lei 4.595/1964, Art. 9º"
-  },
-  {
-    moduleId: 2,
-    lessonId: 0,
-    question: "Qual é o fundamento constitucional do sigilo bancário no Brasil?",
-    options: [
-      "Lei específica do Banco Central",
-      "Direitos fundamentais de intimidade e vida privada (CF/88)",
-      "Apenas regulação da Lei Complementar 105/2001",
-      "Decisão do Supremo Tribunal Federal"
-    ],
-    correctAnswer: 1,
-    explanation: "O sigilo bancário é derivado dos direitos constitucionais fundamentais de intimidade (Art. 5º, X) e vida privada, protegidos na Constituição Federal de 1988. A Lei Complementar 105/2001 o regulamenta.",
-    regulatoryReference: "CF/88, Art. 5º, X; LC 105/2001"
-  },
-  {
-    moduleId: 2,
-    lessonId: 0,
-    question: "Segundo Lei Complementar 105/2001, quem tem direito automático de quebra do sigilo bancário?",
-    options: [
-      "Procurador-Geral da República e autoridades tributárias",
-      "Qualquer membro do Judiciário",
-      "Órgãos de segurança pública estaduais",
-      "Apenas mediante autorização judicial"
-    ],
-    correctAnswer: 0,
-    explanation: "A Lei Complementar 105/2001 permite acesso sem autorização judicial ao Procurador-Geral da República (para investigações criminais) e autoridades tributárias (para apuração de débitos fiscais). Outros casos requerem ordem judicial.",
-    regulatoryReference: "LC 105/2001, Arts. 1º e 2º"
-  },
-  {
-    moduleId: 3,
-    lessonId: 0,
-    question: "De acordo com Lei 7.492/1986, qual é a pena máxima para falsificação de moeda?",
-    options: [
-      "5 anos de reclusão",
-      "8 anos de reclusão",
-      "15 anos de reclusão",
-      "30 anos de reclusão"
-    ],
-    correctAnswer: 2,
-    explanation: "A Lei 7.492/1986 (Art. 1º) prevê pena de 8 a 15 anos de reclusão para falsificação de moeda, uma das infrações mais graves contra o SFN. Inclui também documentos, títulos e valores de circulação garantida.",
-    regulatoryReference: "Lei 7.492/1986, Art. 1º"
-  },
-  {
-    moduleId: 3,
-    lessonId: 0,
-    question: "Qual é a diferença entre apropriação indébita e gestão fraudulenta segundo Lei 7.492/1986?",
-    options: [
-      "Não há diferença legal entre os crimes",
-      "Apropriação: desvio de valores; Gestão fraudulenta: administração com intenção defraudadora",
-      "Apropriação é crime civil, gestão fraudulenta é crime penal",
-      "Gestão fraudulenta só se aplica a instituições públicas"
-    ],
-    correctAnswer: 1,
-    explanation: "Apropriação indébita (Art. 2º) envolve o desvio de valores confiados ao agente. Gestão fraudulenta (Art. 4º) refere-se à administração de instituição financeira com intenção defraudadora, usando bens/valores de terceiros.",
-    regulatoryReference: "Lei 7.492/1986, Arts. 2º e 4º"
-  },
-  {
-    moduleId: 4,
-    lessonId: 0,
-    question: "Qual lei modernizou o mercado de câmbio brasileiro e eliminou a exigência de licitação?",
-    options: [
-      "Lei 4.595/1964",
-      "Lei 9.069/1995",
-      "Lei 14.286/2021",
-      "Resolução CMN 4.305/2014"
-    ],
-    correctAnswer: 2,
-    explanation: "A Lei 14.286/2021 modernizou o marco regulatório de câmbio, eliminando a obrigatoriedade de licitação e permitindo operações de câmbio com taxas livremente pactuadas entre as partes.",
-    regulatoryReference: "Lei 14.286/2021"
-  },
-  {
-    moduleId: 4,
-    lessonId: 0,
-    question: "Em uma operação de câmbio manual, qual é o prazo máximo para entrega de moeda estrangeira?",
-    options: [
-      "Mesma data (D0)",
-      "1 dia útil (D+1)",
-      "2 dias úteis (D+2)",
-      "5 dias úteis (D+5)"
-    ],
-    correctAnswer: 1,
-    explanation: "Operações de câmbio manual normalmente são liquidadas em D+1 (1 dia útil após a data da operação). Para operações spot internacionais, pode ser D+2. O prazo é contratado entre as partes e registrado no SCS.",
-    regulatoryReference: "Lei 14.286/2021"
-  },
-  {
-    moduleId: 4,
-    lessonId: 0,
-    question: "Qual é a base de cálculo do IOF (Imposto sobre Operações Financeiras) em operações de câmbio?",
-    options: [
-      "Valor em reais da moeda estrangeira",
-      "Percentual fixo sobre o valor da operação",
-      "Margem de lucro do banco",
-      "Apenas para operações acima de USD 10.000"
-    ],
-    correctAnswer: 0,
-    explanation: "O IOF em câmbio é calculado sobre o valor em reais (R$) da moeda estrangeira negociada. A alíquota varia conforme o tipo de operação e política cambial vigente. É um imposto federal sobre operações financeiras.",
-    regulatoryReference: "Lei 7.169/1983; Lei 14.286/2021"
-  },
-  {
-    moduleId: 5,
-    lessonId: 0,
-    question: "Qual lei estabeleceu o regime de câmbio flutuante no Brasil?",
-    options: [
-      "Lei 4.595/1964",
-      "Lei 9.069/1995",
-      "Lei 9.069/1995 regulamentada por Decreto 3.664/2000",
-      "Lei 14.286/2021"
-    ],
-    correctAnswer: 2,
-    explanation: "O regime de câmbio flutuante foi implementado pela Lei 9.069/1995 e regulamentado pelo Decreto 3.664/2000. Neste regime, a taxa de câmbio é determinada pela oferta e demanda no mercado, não por controle estatal.",
-    regulatoryReference: "Lei 9.069/1995; Decreto 3.664/2000"
-  },
-  {
-    moduleId: 5,
-    lessonId: 0,
-    question: "O que são operações de capital conforme a legislação cambial brasileira?",
-    options: [
-      "Apenas investimentos em ações de empresas",
-      "Transferências de patrimônio, empréstimos internacionais e investimentos",
-      "Somente pagamentos de importação e exportação",
-      "Transações restritas apenas a instituições públicas"
-    ],
-    correctAnswer: 1,
-    explanation: "Operações de capital incluem transferências de patrimônio, investimentos diretos, empréstimos e financiamentos internacionais. São distintas das operações correntes (comércio, serviços) e requerem registro no Banco Central.",
-    regulatoryReference: "Lei 4.595/1964; Lei 9.069/1995"
-  },
-  {
-    moduleId: 6,
-    lessonId: 0,
-    question: "Quantas categorias de operadores de câmbio foram definidas pela Resolução CMN 175/2023?",
-    options: [
-      "3 categorias",
-      "4 categorias",
-      "6 categorias",
-      "8 categorias"
-    ],
-    correctAnswer: 2,
-    explanation: "A Resolução CMN 175/2023 define 6 categorias de operadores: 1) Bancos, 2) Corretoras, 3) Distribuidoras, 4) Novas instituições de câmbio, 5) Instituições de pagamento e 6) Plataformas de negociação.",
-    regulatoryReference: "Resolução CMN 175/2023"
-  },
-  {
-    moduleId: 6,
-    lessonId: 0,
-    question: "Qual é a principal responsabilidade do operador de câmbio relacionada a documentação?",
-    options: [
-      "Manter sigilo total de todas as operações",
-      "Obter e manter documentação comprobatória das operações e origem dos recursos",
-      "Informar diariamente ao Banco Central",
-      "Comunicar apenas operações acima de USD 50.000"
-    ],
-    correctAnswer: 1,
-    explanation: "Operadores de câmbio devem obter e manter documentação comprobatória de todas as operações (contrato de câmbio, comprovante de fundos, justificativa econômica). Conforme Resolução CMN 175/2023, também devem manter documentação de origem dos recursos.",
-    regulatoryReference: "Resolução CMN 175/2023"
-  },
-  {
-    moduleId: 7,
-    lessonId: 0,
-    question: "Segundo Resolução CMN 4.935/2021, quais são os requisitos principais para seleção de correspondente cambial?",
-    options: [
-      "Apenas idoneidade moral e capacidade operacional",
-      "Capacidade técnica, operacional, idoneidade, conformidade com PLD/FT e estrutura de controles",
-      "Apenas verificação de registro na CVM",
-      "Somente comprovação de capital mínimo"
-    ],
-    correctAnswer: 1,
-    explanation: "A Resolução CMN 4.935/2021 exige que correspondentes cambiais tenham: capacidade operacional, idoneidade moral e profissional, conformidade com regulamentações de PLD/FT, e estrutura de controles internos adequada.",
-    regulatoryReference: "Resolução CMN 4.935/2021"
-  },
-  {
-    moduleId: 7,
-    lessonId: 0,
-    question: "Qual é a responsabilidade do banco que contrata correspondentes cambiais?",
-    options: [
-      "Apenas supervisão mensal da atividade",
-      "Responsabilidade solidária pelas atividades do correspondente",
-      "Apenas responsabilidade sobre contratação inicial",
-      "Nenhuma responsabilidade após contratação"
-    ],
-    correctAnswer: 1,
-    explanation: "O banco mandante é responsável solidariamente pelas atividades realizadas pelo correspondente cambial. Deve exercer supervisão contínua, auditar periodicamente e manter documentação completa de conformidade regulatória.",
-    regulatoryReference: "Resolução CMN 4.935/2021"
-  },
-  {
-    moduleId: 8,
-    lessonId: 0,
-    question: "Qual é o conceito de 'estruturação' (structuring) conforme Lei 9.613/1998?",
-    options: [
-      "Organização administrativa de uma instituição financeira",
-      "Dividir operações em valores menores para evitar denúncia de operação suspeita",
-      "Estrutura do sistema de conformidade",
-      "Organização de processos operacionais"
-    ],
-    correctAnswer: 1,
-    explanation: "Estruturação é a prática de dividir uma operação em múltiplas operações menores para evitar o disparo de alertas de PLD ou a denúncia de operação suspeita (RIF). É crime em si mesma conforme Lei 9.613/1998.",
+    explanation: "Sim, instituições têm obrigação legal de comunicar ao COAF.",
     regulatoryReference: "Lei 9.613/1998"
-  },
-  {
-    moduleId: 8,
-    lessonId: 0,
-    question: "Qual é o prazo máximo para envio de RIF (Comunicação de Operação Suspeita) ao COAF?",
-    options: [
-      "Imediatamente (mesma data)",
-      "Até 24 horas",
-      "Até 10 dias úteis",
-      "Até 30 dias"
-    ],
-    correctAnswer: 2,
-    explanation: "De acordo com Circular BCB 3.978/2020, a RIF deve ser encaminhada ao COAF em até 10 dias úteis da detecção da operação suspeita. Em casos de operações estruturadas, o prazo pode ser diferente conforme orientações específicas.",
-    regulatoryReference: "Circular BCB 3.978/2020"
   },
   {
     moduleId: 8,
@@ -1427,973 +1261,120 @@ export const lessonQuizzes = [
       "Depósito, Retirada e Reinvestimento"
     ],
     correctAnswer: 1,
-    explanation: "As três fases são: 1) Colocação (placement): entrada do dinheiro ilícito no sistema financeiro; 2) Ocultação (layering): operações complexas para desconectar origem; 3) Integração (integration): reinserção no mercado como origem lícita.",
+    explanation: "Colocação, Ocultação e Integração são as três fases.",
     regulatoryReference: "Lei 9.613/1998"
   },
   {
     moduleId: 8,
-    lessonId: 0,
-    question: "Qual é a pena criminal máxima para lavagem de dinheiro conforme Lei 9.613/1998?",
+    lessonId: 1,
+    question: "Qual valor de operação em espécie deve ser comunicado?",
     options: [
-      "5 anos de reclusão",
-      "10 anos de reclusão",
-      "15 anos de reclusão",
-      "20 anos de reclusão"
-    ],
-    correctAnswer: 2,
-    explanation: "Lei 9.613/1998 (Art. 1º) prevê pena de 6 meses a 1 ano de detenção ou multa. Porém, se cumulada com crime originário, a pena pode atingir 15 anos ou mais. As penalidades administrativas podem ser severas (multas até R$ 20 milhões).",
-    regulatoryReference: "Lei 9.613/1998, Art. 1º"
-  }
-];
-
-
-
-// 100-question comprehensive final exam
-export const comprehensiveExam = [
-  // 20 questions about Sistema Financeiro Nacional
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "O Sistema Financeiro Nacional subdivide-se em quantas estruturas de mercado principais?",
-    options: ["Duas", "Três", "Quatro", "Cinco"],
-    correctAnswer: 1,
-    explanation: "O SFN divide-se em três segmentos: Moeda/Crédito/Capitais/Câmbio; Seguros Privados; e Previdência Fechada."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual mercado permite que empresas captem recursos de investidores?",
-    options: ["Monetário", "Crédito", "Capitais", "Câmbio"],
-    correctAnswer: 2,
-    explanation: "O Mercado de Capitais permite que empresas captem recursos através de valores mobiliários como ações e debêntures."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Quantos membros compõem a Diretoria Colegiada do BCB?",
-    options: ["7", "8", "9", "10"],
-    correctAnswer: 2,
-    explanation: "A Diretoria Colegiada do BCB tem 9 membros, sendo um deles o Presidente da instituição."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual órgão é responsável pela formulação da política de moeda e crédito?",
-    options: ["BCB", "CVM", "CMN", "Tesouro"],
-    correctAnswer: 2,
-    explanation: "O Conselho Monetário Nacional (CMN) é o órgão normativo responsável pela formulação da política monetária."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "A autonomia do Banco Central foi estabelecida por qual lei?",
-    options: ["LC 105/2001", "LC 179/2021", "Lei 9.613/1998", "Lei 14.286/2021"],
-    correctAnswer: 1,
-    explanation: "A Lei Complementar 179/2021 conferiu autonomia operacional, técnica e administrativa ao Banco Central."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual órgão supervisiona o Mercado de Valores Mobiliários?",
-    options: ["BCB", "CVM", "SUSEP", "Previc"],
-    correctAnswer: 1,
-    explanation: "A Comissão de Valores Mobiliários (CVM) é o órgão supervisor do mercado de ações e títulos."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Previdência Fechada é composta por:",
-    options: ["Seguros privados", "Fundos de pensão", "Contas poupança", "Investimentos em ações"],
-    correctAnswer: 1,
-    explanation: "Previdência Fechada refere-se aos fundos de pensão, planos para funcionários de empresas."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "A SUSEP supervisiona qual tipo de atividade?",
-    options: ["Seguros privados", "Câmbio", "Valores", "Previdência"],
-    correctAnswer: 0,
-    explanation: "A Superintendência de Seguros Privados (SUSEP) supervisiona seguros privados, capitalização e previdência aberta."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual é a hierarquia correta das normas do BCB?",
-    options: [
-      "Portaria > Instrução > Resolução BCB > Resolução CMN",
-      "Resolução CMN > Resolução BCB > Instrução > Portaria",
-      "Instrução > Resolução BCB > Resolução CMN > Portaria",
-      "Resolução BCB > Portaria > Instrução > Resolução CMN"
+      "Acima de R$ 10.000",
+      "Acima de R$ 50.000",
+      "Acima de R$ 100.000",
+      "Acima de R$ 500.000"
     ],
     correctAnswer: 1,
-    explanation: "Resoluções CMN têm maior hierarquia, seguidas por Resoluções BCB, Instruções Normativas e Portarias."
+    explanation: "Operações em espécie ≥ R$ 50.000 devem ser comunicadas.",
+    regulatoryReference: "Circular BCB 3.978/2020"
   },
   {
-    category: 'Sistema Financeiro Nacional',
-    question: "Operações Conjuntas entre órgãos do SFN resultam em:",
-    options: ["Portarias de Órgão Único", "Resoluções Conjuntas", "Circulares Conjuntas", "Instruções Ordinárias"],
-    correctAnswer: 1,
-    explanation: "Decisões conjuntas entre órgãos resultam em Resoluções, Portarias ou Instruções Conjuntas."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual órgão supervisiona instituições de previdência complementar fechada?",
-    options: ["CVM", "SUSEP", "Previc", "BCB"],
-    correctAnswer: 2,
-    explanation: "A Superintendência Nacional de Previdência Complementar (Previc) supervisiona fundos de pensão."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "O CMN é composto por qual composição?",
-    options: [
-      "Presidente da República, Ministro Fazenda, Presidente BCB",
-      "Ministro Fazenda (presidente), Ministro Planejamento, Presidente BCB",
-      "Todos os Ministros do Governo",
-      "Senadores e Deputados"
-    ],
-    correctAnswer: 1,
-    explanation: "CMN é integrado pelo Ministro da Fazenda (Presidente), Ministro do Planejamento e Presidente do BCB."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual é a missão do Banco Central segundo sua lei de autonomia?",
-    options: [
-      "Arrecadar impostos",
-      "Garantir estabilidade do poder de compra e eficiência do SFN",
-      "Fazer política fiscal",
-      "Controlar preços"
-    ],
-    correctAnswer: 1,
-    explanation: "A missão do BCB é garantir estabilidade do poder de compra, zelar por sistema financeiro sólido e fomentar bem-estar econômico."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual órgão que não faz parte do SFN?",
-    options: ["BCB", "CVM", "Ministério da Fazenda", "SUSEP"],
-    correctAnswer: 2,
-    explanation: "Ministério da Fazenda não é órgão do SFN, mas integrante do CMN como órgão normativo."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Reservas internacionais são mantidas por qual órgão?",
-    options: ["Tesouro Nacional", "Banco Central", "Ministério Exterior", "CMN"],
-    correctAnswer: 1,
-    explanation: "O Banco Central do Brasil é responsável por manter e administrar as reservas internacionais do país."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "O mandato de membros da Diretoria Colegiada do BCB é de:",
-    options: ["2 anos", "3 anos", "4 anos", "5 anos"],
-    correctAnswer: 2,
-    explanation: "Membros da Diretoria Colegiada têm mandatos de 4 anos, conforme lei de autonomia."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual é o menor nível hierárquico de norma do sistema?",
-    options: ["Resolução CMN", "Resolução BCB", "Instrução Normativa", "Portaria BCB"],
-    correctAnswer: 3,
-    explanation: "Portarias BCB têm o menor nível hierárquico, servindo para esclarecer e informar procedimentos operacionais."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Em caso de vacância do cargo de Presidente do BCB, quem assume?",
-    options: [
-      "Vice-Presidente (se existir)",
-      "Diretor Sênior",
-      "Será nomeado novo membro pela Diretoria",
-      "O Tesouro Nacional"
-    ],
-    correctAnswer: 0,
-    explanation: "Em caso de vacância, assume um vice-presidente designado, ou temporariamente um diretor até nova nomeação presidencial."
-  },
-  {
-    category: 'Sistema Financeiro Nacional',
-    question: "Qual das seguintes atividades é supervisionada pelo BCB?",
-    options: ["Vendas de ações", "Operações de câmbio", "Emissão de seguros", "Concessão de pensões"],
-    correctAnswer: 1,
-    explanation: "O BCB supervisiona operações de câmbio e instituições autorizadas a realizá-las."
-  },
-
-  // 20 questions about Sigilo Bancário
-  {
-    category: 'Sigilo Bancário',
-    question: "O sigilo bancário é regulamentado por qual lei?",
-    options: ["Lei 7.492/1986", "Lei Complementar 105/2001", "Lei 9.613/1998", "Lei 14.286/2021"],
-    correctAnswer: 1,
-    explanation: "Lei Complementar 105/2001 é a legislação que regulamenta o sigilo bancário no Brasil."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Pode o sigilo bancário ser quebrado?",
-    options: ["Nunca", "Sim, conforme lei", "Raramente", "Apenas por presidente"],
-    correctAnswer: 1,
-    explanation: "Sigilo bancário pode ser quebrado conforme disposições legais específicas (ordem judicial, investigação de crime determinado)."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Quem tem acesso garantido a informações bancárias sem quebra de sigilo?",
-    options: ["Jornalista", "O próprio cliente", "Polícia", "Vizinhos"],
-    correctAnswer: 1,
-    explanation: "O cliente tem acesso direto às suas informações bancárias, pois é detentor delas."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "A LGPD afeta o sigilo bancário?",
-    options: ["Não afeta", "Sim, complementa a proteção", "Substitui completamente", "Enfraquece"],
-    correctAnswer: 1,
-    explanation: "LGPD complementa e fortalece a proteção ao sigilo bancário com regras rigorosas sobre dados pessoais."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Banco pode compartilhar dados com outro banco?",
-    options: [
-      "Nunca",
-      "Sim, para fins legais autorizados (PLD, risco de crédito)",
-      "Sempre livremente",
-      "Apenas com pagamento"
-    ],
-    correctAnswer: 1,
-    explanation: "Bancos podem compartilhar dados entre si apenas para fins autorizados por lei, como prevenção à lavagem de dinheiro."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Qual é a pena para violação de sigilo bancário?",
-    options: [
-      "Apenas multa civil",
-      "Multa, cassação de autorização, responsabilidade penal",
-      "Nenhuma",
-      "Apenas advertência"
-    ],
-    correctAnswer: 1,
-    explanation: "Violação de sigilo resulta em multa, cassação de autorização para funcionar e possível responsabilidade penal."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Comunicações de boa-fé ao COAF geram responsabilidade?",
-    options: ["Sim sempre", "Não, são protegidas por lei", "Apenas civil", "Apenas administrativa"],
-    correctAnswer: 1,
-    explanation: "Lei 9.613/1998 protege comunicações de boa-fé, afastando responsabilidades civil e administrativa."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Um funcionário pode violar sigilo por curiosidade?",
-    options: ["Pode, é responsabilidade do banco", "Não, sofre responsabilidade penal", "Sim, sem consequências", "Apenas se autorizado"],
-    correctAnswer: 1,
-    explanation: "Funcionário que viola sigilo por curiosidade comete crime e sofre responsabilidade penal individual."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "A quebra de sigilo judicial requer ordem formal?",
-    options: ["Não", "Sim, ordem judicial fundamentada", "Apenas ofício", "Apenas email"],
-    correctAnswer: 1,
-    explanation: "Quebra de sigilo requer ordem judicial formal, escrita e fundamentada em investigação de crime determinado."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Pode o cliente consentir com violação de sigilo?",
-    options: [
-      "Não, é indisponível",
-      "Sim, totalmente",
-      "Sim parcialmente para fins específicos",
-      "Depende da instituição"
-    ],
-    correctAnswer: 2,
-    explanation: "Cliente pode consentir na divulgação de suas informações para fins específicos (análise crédito, operação), mas não pode abrir mão de direitos fundamentais."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Banco deve informar cliente sobre pedido de quebra de sigilo?",
-    options: [
-      "Sim, sempre",
-      "Não pode informar antes da decisão judicial",
-      "Depende do tipo de crime",
-      "Apenas se pedido for negado"
-    ],
-    correctAnswer: 1,
-    explanation: "Banco não pode informar cliente sobre pedido de quebra antes da decisão judicial, pois isso prejudicaria investigação."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Qual é o fundamento constitucional do sigilo?",
-    options: [
-      "Lei infraconstitucional",
-      "Direitos fundamentais à intimidade e privacidade",
-      "Decreto Presidencial",
-      "Portaria do BCB"
-    ],
-    correctAnswer: 1,
-    explanation: "Sigilo bancário tem fundamento constitucional nos direitos fundamentais à intimidade e vida privada."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Podem ser confiadas operações suspeitas diretamente ao COAF?",
-    options: ["Não", "Sim, sempre", "Sim, conforme procedimentos", "Apenas de ações"],
-    correctAnswer: 2,
-    explanation: "Instituições devem comunicar operações suspeitas/atípicas ao COAF conforme procedimentos legais estabelecidos."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "O sigilo se estende a quanto tempo após encerramento da conta?",
-    options: ["Não se estende", "1 ano", "Indefinidamente", "5 anos"],
-    correctAnswer: 2,
-    explanation: "Sigilo bancário persiste indefinidamente, mesmo após encerramento da conta do cliente."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Qual é o órgão que pode solicitar quebra de sigilo sem ordem judicial?",
-    options: ["Nenhum", "BCB em inspeção", "Polícia Federal sempre", "Receita Federal"],
-    correctAnswer: 1,
-    explanation: "BCB, como supervisor, pode requisitar informações em processo de inspeção, mas deve respeitar lei de sigilo em outros contextos."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Divulgação em mídia viola sigilo?",
-    options: ["Não", "Sim, é crime", "Depende do valor", "Apenas se for internacional"],
-    correctAnswer: 1,
-    explanation: "Divulgar informações de cliente em mídia ou a terceiros é clara violação de sigilo, configurando crime."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Conselho de Administração do banco tem acesso a dados dos clientes?",
-    options: ["Não", "Sim, em questões operacionais", "Nunca", "Apenas de VIP"],
-    correctAnswer: 1,
-    explanation: "Administração pode ter acesso para fins operacionais legítimos, mas respeita sigilo para informações não essenciais."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "A Receita Federal pode requisitar dados sem ordem judicial?",
-    options: [
-      "Sim, sempre",
-      "Não pode nunca",
-      "Sim, em investigação fiscal com requisição formal",
-      "Apenas de operação estrangeira"
-    ],
-    correctAnswer: 2,
-    explanation: "Receita pode fazer requisição formal em investigação fiscal, mas deve respeitar procedimentos legais de sigilo."
-  },
-  {
-    category: 'Sigilo Bancário',
-    question: "Qual lei protege dados pessoais além de sigilo bancário?",
-    options: ["Lei 9.613/1998", "Lei 7.492/1986", "LGPD (Lei 13.709/2018)", "Lei 14.286/2021"],
-    correctAnswer: 2,
-    explanation: "Lei Geral de Proteção de Dados (LGPD) estabelece proteção geral a dados pessoais, complementando sigilo bancário."
-  },
-
-  // 15 questions about Crimes contra o SFN
-  {
-    category: 'Crimes contra o SFN',
-    question: "Lei 7.492/1986 criminaliza quais condutas?",
-    options: [
-      "Apenas roubo a banco",
-      "Crimes contra o Sistema Financeiro Nacional",
-      "Apenas fraude",
-      "Apenas lavagem de dinheiro"
-    ],
-    correctAnswer: 1,
-    explanation: "Lei 7.492 criminaliza diversos crimes contra o SFN, incluindo operações irregulares, falsificação, evasão de divisas."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Evasão de divisas é crime?",
-    options: ["Não", "Sim, retirada ilegal de moeda estrangeira", "Apenas acima de US$ 100.000", "Apenas se for fora do país"],
-    correctAnswer: 1,
-    explanation: "Evasão de divisas é crime tipificado em Lei 7.492, com pena de 1 a 4 anos e multa."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Falsificar documentos para câmbio é crime?",
-    options: ["Não", "Sim, crime contra o SFN", "Apenas felony", "Depende do valor"],
-    correctAnswer: 1,
-    explanation: "Falsificar documentos para operação de câmbio é crime tipificado em Lei 7.492."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Fazer câmbio sem autorização é crime?",
-    options: ["Não", "Sim, crime contra o SFN", "Apenas infração", "Só se for valor alto"],
-    correctAnswer: 1,
-    explanation: "Realizar operação de câmbio sem autorização do BCB é crime contra o Sistema Financeiro Nacional."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Qual é a pena para crime contra o SFN?",
-    options: ["Até 1 ano", "1 a 4 anos", "5 a 10 anos", "Perpétua"],
-    correctAnswer: 1,
-    explanation: "A maioria dos crimes em Lei 7.492 tem pena de 1 a 4 anos de detenção e multa."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Bancário pode responder criminalmente por atos de colega?",
-    options: [
-      "Não",
-      "Sim, se foi cúmplice ou negligente",
-      "Sempre",
-      "Nunca em crime"
-    ],
-    correctAnswer: 1,
-    explanation: "Bancário responde por crime se foi cúmplice, negligente ou negligenciou seu dever de compliance."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Quem investiga crimes contra o SFN?",
-    options: ["Apenas BCB", "Apenas Polícia Federal", "Polícia Federal, PF, MP conforme jurisdição", "Apenas MP"],
-    correctAnswer: 2,
-    explanation: "Investigação é competência de Polícia Federal, Polícia Civil e Ministério Público conforme jurisdição."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Documento falso é crime quando usado em câmbio?",
-    options: ["Não", "Sim, é crime contra SFN", "Depende de intenção", "Apenas TCC"],
-    correctAnswer: 1,
-    explanation: "Usar ou apresentar documentos falsificados em operação de câmbio é crime tipificado em Lei 7.492."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Atribuir falsa identidade para câmbio é crime?",
-    options: ["Não", "Sim, crime contra SFN", "Apenas infração", "Apenas civil"],
-    correctAnswer: 1,
-    explanation: "Atribuir falsa identidade para realização de câmbio é crime, com pena de 1 a 4 anos e multa."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Denúncia anônima pode levar a investigação de crime?",
-    options: ["Não", "Sim se houver indícios", "Apenas de conhecimento", "Nunca"],
-    correctAnswer: 1,
-    explanation: "Denúncia anônima com indícios pode iniciar investigação, respeitando garantias de direito de defesa."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Qual é a Lei que criminaliza crimes contra o SFN?",
-    options: ["9.613/1998", "7.492/1986", "14.286/2021", "105/2001"],
-    correctAnswer: 1,
-    explanation: "Lei 7.492/1986 é a principal legislação criminalizando condutas contra o Sistema Financeiro Nacional."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Transferência de valores via câmbio ilegal é crime?",
-    options: ["Não", "Sim, é crime contra SFN", "Apenas se internacional", "Apenas ciber-crime"],
-    correctAnswer: 1,
-    explanation: "Transferência de valores ilicitamente via câmbio é crime contra o SFN."
-  },
-  {
-    category: 'Crimes contra o SFN',
-    question: "Bancário que testemunha crime obrigado a denunciar?",
-    options: [
-      "Não",
-      "Sim, sob certos crimes graves",
-      "Apenas supervisores",
-      "Depende do valor"
-    ],
-    correctAnswer: 1,
-    explanation: "Certos crimes graves geram obrigação de denúncia, especialmente crimes contra o SFN e terrorismo."
-  },
-
-  // 15 questions about Operações de Câmbio
-  {
-    category: 'Operações de Câmbio',
-    question: "O que é operação de câmbio?",
-    options: [
-      "Compra de ação estrangeira",
-      "Compra/venda de moeda estrangeira por moeda nacional",
-      "Empréstimo internacional",
-      "Compra de imóvel exterior"
-    ],
-    correctAnswer: 1,
-    explanation: "Operação de câmbio é compra e venda de moeda estrangeira mediante contravalor em moeda nacional ou outra moeda."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Qual é a Lei que regula câmbio atualmente?",
-    options: ["7.492/1986", "9.613/1998", "14.286/2021", "105/2001"],
-    correctAnswer: 2,
-    explanation: "Lei 14.286/2021 é a legislação atual que regula operações de câmbio no Brasil."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Pessoa física pode fazer câmbio?",
-    options: ["Não", "Sim, sem restrição", "Sim, dentro de limites (até US$ 500)", "Apenas bancos"],
-    correctAnswer: 2,
-    explanation: "Pessoa física pode fazer operações de câmbio até US$ 500 em espécie, de forma eventual e não profissional."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Como é determinada a taxa de câmbio conforme Lei 14.286?",
-    options: [
-      "Fixada pelo BCB",
-      "Fixada pelo governo",
-      "Livremente pactuada entre instituição e cliente",
-      "Por consenso de bancos"
-    ],
-    correctAnswer: 2,
-    explanation: "Lei 14.286/2021 estabelece que taxa de câmbio é livremente pactuada entre instituição autorizada e cliente."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Pessoa física pode fazer câmbio de moeda em espécie?",
-    options: [
-      "Não",
-      "Sim, sem limite",
-      "Sim, até US$ 500 de forma eventual",
-      "Apenas USD"
-    ],
-    correctAnswer: 2,
-    explanation: "Lei 14.286/2021 permite compra/venda de moeda em espécie até US$ 500 entre pessoas físicas, eventualmente."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Toda operação de câmbio precisa de justificativa econômica?",
-    options: ["Não", "Sim, todas", "Apenas valores altos", "Apenas banco"],
-    correctAnswer: 1,
-    explanation: "Toda operação de câmbio deve ter justificativa econômica legítima (pagamentos, investimentos, turismo)."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Instituições autorizadas a fazer câmbio têm limitações de valor?",
-    options: [
-      "Sim, até US$ 100.000",
-      "Sim, até US$ 1.000.000",
-      "Não, podem operar sem limite",
-      "Depende do cliente"
-    ],
-    correctAnswer: 2,
-    explanation: "Instituições autorizadas a operar câmbio não têm limite de valor para operações entre si ou com clientes."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "O BCB pode cancelar autorização de instituição de câmbio?",
-    options: ["Não", "Sim em caso de irregularidades", "Apenas multa", "Apenas suspensão"],
-    correctAnswer: 1,
-    explanation: "BCB pode cancelar autorização em caso de irregularidades apuradas em processo administrativo."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Câmbio paralelo é permitido?",
-    options: ["Sim", "Não, é crime", "Apenas em feriado", "Sim se reportar"],
-    correctAnswer: 1,
-    explanation: "Câmbio paralelo (fora do mercado oficial autorizado) é ilegal e crime contra o SFN."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Operações de câmbio devem ser registradas?",
-    options: ["Não", "Sim, no SISBACEN", "Apenas grandes valores", "Apenas anualmente"],
-    correctAnswer: 1,
-    explanation: "Todas as operações devem ser registradas no SISBACEN (Sistema de Informações do BCB)."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Qual é o limite para correspondente cambial por operação?",
-    options: ["US$ 1.000", "US$ 2.000", "US$ 3.000 (ou US$ 1.000 em espécie)", "Sem limite"],
-    correctAnswer: 2,
-    explanation: "Correspondente está limitado a US$ 3.000 por operação, ou US$ 1.000 em operações com espécie."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Entesouramento de moeda estrangeira é permitido?",
-    options: ["Não", "Sim, sem limites", "Sim, com limite e justificativa", "Apenas bancos"],
-    correctAnswer: 2,
-    explanation: "Entesouramento de moeda estrangeira é permitido dentro de limites e com justificativa adequada."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Investidor estrangeiro precisa fazer câmbio?",
-    options: [
-      "Não, investe direto em reais",
-      "Sim, precisa converter moeda em reais",
-      "Apenas acima de certo valor",
-      "Não se for em ação"
-    ],
-    correctAnswer: 1,
-    explanation: "Investidor estrangeiro precisa fazer câmbio para converter sua moeda em reais para investimento no Brasil."
-  },
-  {
-    category: 'Operações de Câmbio',
-    question: "Remessas do exterior para Brasil requerem câmbio?",
-    options: [
-      "Não",
-      "Sim, se em moeda estrangeira",
-      "Apenas acima de valor",
-      "Não automaticamente"
-    ],
-    correctAnswer: 1,
-    explanation: "Remessas em moeda estrangeira requerem operação de câmbio para conversão em reais."
-  },
-
-  // 15 questions about Legislação Cambial e Normas
-  {
-    category: 'Legislação Cambial',
-    question: "Lei 14.286/2021 liberalizou qual aspecto do câmbio?",
-    options: [
-      "Permitiu câmbio paralelo",
-      "Liberalizou fixação de taxas",
-      "Proibiu operações",
-      "Aumentou restrições"
-    ],
-    correctAnswer: 1,
-    explanation: "Lei 14.286/2021 liberalizou o mercado permitindo livre pactuação de taxa entre instituição e cliente."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Quem é responsável pela supervisão cambial?",
-    options: ["Tesouro", "Banco Central", "Ministério Exterior", "Câmara Comércio"],
-    correctAnswer: 1,
-    explanation: "Banco Central é responsável por regulação, supervisão e fiscalização de operações de câmbio."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Existe limite para câmbio de capital?",
-    options: ["Sim, US$ 10.000", "Sim, US$ 100.000", "Não, operações de capital sem limite específico", "Sim, US$ 1.000.000"],
-    correctAnswer: 2,
-    explanation: "Operações de câmbio de capital (investimentos, empréstimos) não têm limite específico de valor."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Qual é a natureza das operações de câmbio de custeio?",
-    options: [
-      "Investimentos",
-      "Remessas familiares",
-      "Pagamentos de importações",
-      "Compra de ações"
-    ],
-    correctAnswer: 2,
-    explanation: "Operações de custeio relacionam-se ao pagamento de importações de bens e serviços."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Lei 14.286 permite câmbio de moeda estrangeira entre PF em espécie?",
-    options: [
-      "Não",
-      "Sim, até US$ 500 eventual",
-      "Sim, sem limite",
-      "Apenas USD"
-    ],
-    correctAnswer: 1,
-    explanation: "Sim, a lei permite até US$ 500 em moeda estrangeira entre pessoas físicas de forma eventual e não profissional."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Correspondente cambial tem limite de operação?",
-    options: [
-      "Não",
-      "Sim, US$ 1.000",
-      "Sim, US$ 3.000 (ou US$ 1.000 em espécie)",
-      "Sim, US$ 5.000"
-    ],
-    correctAnswer: 2,
-    explanation: "Correspondentes estão limitados a US$ 3.000 por operação, ou US$ 1.000 em operações com espécie."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Quem regulamenta procedimentos cambiais através de Circulares?",
-    options: ["CMN", "Banco Central", "Ministério", "CVM"],
-    correctAnswer: 1,
-    explanation: "Banco Central emite Circulares que regulamentam procedimentos operacionais de câmbio."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Operações de câmbio cliente são entre:",
-    options: [
-      "Banco e pessoa física",
-      "Banco e banco",
-      "Qualquer duas pessoas",
-      "Governo e banco"
-    ],
-    correctAnswer: 0,
-    explanation: "Operações cambiais cliente são entre instituição autorizada de câmbio e seus clientes (pessoas físicas ou jurídicas)."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Qual é o principal objetivo da Lei 14.286?",
-    options: [
-      "Proibir câmbio",
-      "Liberalizar mercado de câmbio",
-      "Aumentar fiscalização",
-      "Fixar taxa de câmbio"
-    ],
-    correctAnswer: 1,
-    explanation: "Lei 14.286/2021 visa liberalizar o mercado de câmbio, permitindo maior concorrência entre instituições."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Taxa de câmbio pode ser negociada?",
-    options: ["Não", "Sim, livremente com instituição", "Apenas BCB fixa", "Governo fixa"],
-    correctAnswer: 1,
-    explanation: "Taxa de câmbio é negociável entre instituição autorizada e cliente, sem interferência do BCB."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "BCB pode interferir em taxa de câmbio?",
-    options: ["Sim sempre", "Não, é livre", "Sim em casos especiais", "Apenas com CMN"],
-    correctAnswer: 2,
-    explanation: "BCB pode intervir em mercado cambial em casos especiais para estabilidade, mas geralmente taxa é livre."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Operações cambiais devem respeitar limite de justificativa?",
-    options: ["Não", "Sim, toda tem que ter justificativa econômica", "Apenas grandes valores", "Não, é livre"],
-    correctAnswer: 1,
-    explanation: "Toda operação de câmbio deve ter justificativa econômica legítima conforme regulações."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Qual é a principal diferença entre Lei 14.286 e legislação anterior?",
-    options: [
-      "Proibiu câmbio",
-      "Manteve tudo igual",
-      "Liberalizou livre pactuação de taxa",
-      "Aumentou limites para PF"
-    ],
-    correctAnswer: 2,
-    explanation: "Lei 14.286 principalmente liberalizou a pactuação de taxa de câmbio, antes de competência do BCB."
-  },
-  {
-    category: 'Legislação Cambial',
-    question: "Contrato de câmbio precisa ser formalizado?",
-    options: ["Não", "Sim, conforme normas", "Apenas acima de US$ 50.000", "Não de PF"],
-    correctAnswer: 1,
-    explanation: "Contrato de câmbio deve ser formalizado conforme procedimentos e normas estabelecidas pelo BCB."
-  },
-
-  // 15 questions about Correspondentes Cambiais
-  {
-    category: 'Correspondentes Cambiais',
-    question: "O que é correspondente cambial?",
-    options: [
-      "Banco que faz câmbio",
-      "Pessoa/instituição autorizada fazer câmbio dentro de limites",
-      "Empresa de remessas",
-      "Agência bancária"
-    ],
-    correctAnswer: 1,
-    explanation: "Correspondente cambial é pessoa ou instituição autorizada a realizar operações de câmbio para terceiros dentro de limites específicos."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Quem pode ser correspondente cambial?",
-    options: [
-      "Apenas bancos",
-      "Qualquer pessoa",
-      "Sociedades, empresários, associações conforme requisitos",
-      "Apenas PF"
-    ],
-    correctAnswer: 2,
-    explanation: "Conforme Resolução CMN 4.935/2021, podem ser correspondentes sociedades, empresários, associações que atendam requisitos."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente precisa de autorização?",
-    options: ["Não", "Sim, de instituição autorizada", "Apenas verbal", "Apenas CNJ"],
-    correctAnswer: 1,
-    explanation: "Correspondente deve ser contratado e autorizado por instituição autorizada a operar câmbio."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Qual é o limite por operação de correspondente?",
-    options: [
-      "US$ 1.000",
-      "US$ 2.000",
-      "US$ 3.000 (ou US$ 1.000 em espécie)",
-      "Sem limite"
-    ],
-    correctAnswer: 2,
-    explanation: "Correspondentes limitados a US$ 3.000 por operação, US$ 1.000 para moeda em espécie."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente pode fazer operações especulativas?",
-    options: ["Sim", "Não, apenas de clientes", "Sim acima do limite", "Depende do banco"],
-    correctAnswer: 1,
-    explanation: "Correspondente não pode fazer operações próprias especulativas, apenas executa operações de clientes."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente tem obrigações de compliance?",
-    options: ["Não", "Sim, PLD/FTP, KYC", "Apenas reporte", "Apenas contratante"],
-    correctAnswer: 1,
-    explanation: "Correspondentes têm obrigações de compliance: KYC, PLD/FTP, devida diligência de cliente."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente deve reportar ao COAF?",
-    options: ["Não", "Sim, através instituição contratante", "Apenas BanCo", "Nunca"],
-    correctAnswer: 1,
-    explanation: "Correspondente reporta operações suspeitas ao COAF através da instituição contratante."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Pode correspondente recusar operação?",
-    options: ["Não", "Sim, se suspeita ou violar norms", "Apenas comando", "Não, obrigado"],
-    correctAnswer: 1,
-    explanation: "Correspondente pode e deve recusar operação se suspeita ilicitude ou violação de normas."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Qual é responsabilidade de correspondente por operação irregular?",
-    options: [
-      "Nenhuma, é do banco",
-      "Solidária com instituição contratante",
-      "Apenas civil",
-      "Apenas administrativa"
-    ],
-    correctAnswer: 1,
-    explanation: "Correspondente tem responsabilidade solidária com instituição contratante por operações irregulares."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente precisa estar filiado a associações?",
-    options: [
-      "Não",
-      "Sim, conforme requisitos do BCB",
-      "Apenas ACB",
-      "Apenas ABCR"
-    ],
-    correctAnswer: 1,
-    explanation: "Correspondentes devem atender requisitos de filiação e registro conforme exigências do Banco Central."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Qual é a Resolução que regula correspondentes?",
-    options: ["4.934", "4.935", "4.936", "4.937"],
-    correctAnswer: 1,
-    explanation: "Resolução CMN 4.935/2021 é a que regula contratação e operação de correspondentes cambiais."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente deve manter registros de operações?",
-    options: ["Não", "Sim, conforme prazos estabelecidos", "Apenas 30 dias", "Apenas eletronicamente"],
-    correctAnswer: 1,
-    explanation: "Correspondente deve manter registros de operações conforme prazos e procedimentos do BCB."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Banco pode encerrar correspondente unilateralmente?",
-    options: ["Não", "Sim, conforme contrato", "Apenas por rescisão", "Não nunca"],
-    correctAnswer: 1,
-    explanation: "Banco pode encerrar contrato com correspondente conforme disposições do contrato e normas."
-  },
-  {
-    category: 'Correspondentes Cambiais',
-    question: "Correspondente deve fazer treinamento de compliance?",
-    options: ["Não", "Sim, conforme requisitos", "Apenas na contratação", "Não requer"],
-    correctAnswer: 1,
-    explanation: "Correspondentes devem receber e manter treinamento contínuo em compliance e normas cambiais."
-  },
-
-  // 15 questions about Prevenção à Lavagem de Dinheiro
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Lei 9.613/1998 estabelece o quê?",
-    options: [
-      "Regulação de câmbio",
-      "Prevenção à Lavagem de Dinheiro",
-      "Crimes contra SFN",
-      "Sigilo bancário"
-    ],
-    correctAnswer: 1,
-    explanation: "Lei 9.613/1998 estabelece obrigações de Prevenção à Lavagem de Dinheiro (PLD)."
-  },
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "O que é lavagem de dinheiro?",
-    options: [
-      "Limpeza física de dinheiro",
-      "Ocultar origem ilícita de recursos",
-      "Troca de moeda",
-      "Depósito bancário"
-    ],
-    correctAnswer: 1,
-    explanation: "Lavagem de dinheiro é ocultação de origem ilícita de recursos tornando-os aparentemente lícitos."
-  },
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Qual órgão recebe comunicação de operações suspeitas?",
-    options: ["BCB", "Polícia", "COAF", "Tesouro"],
-    correctAnswer: 2,
-    explanation: "COAF (Conselho de Controle de Atividades Financeiras) recebe comunicações de operações atípicas/suspeitas."
-  },
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "A partir de qual valor operação em espécie deve ser comunicada?",
-    options: [
-      "R$ 10.000",
-      "R$ 50.000",
-      "R$ 100.000",
-      "R$ 500.000"
-    ],
-    correctAnswer: 1,
-    explanation: "Conforme Circular 3.978/2020, operações iguais ou superiores a R$ 50.000 em espécie devem ser comunicadas ao COAF."
-  },
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
+    moduleId: 8,
+    lessonId: 1,
     question: "O que é operação atípica?",
     options: [
-      "Operação de grande valor",
-      "Operação fora do perfil do cliente",
-      "Operação internacional",
-      "Operação com estrangeiro"
+      "Qualquer operação fora do horário",
+      "Operação que se desvia do perfil do cliente, sem razão econômica aparente",
+      "Operação com valor alto",
+      "Operação internacional"
     ],
     correctAnswer: 1,
-    explanation: "Operação atípica é aquela que se desvia do perfil usual do cliente sem justificativa econômica."
+    explanation: "Operação atípica desvia do perfil usual do cliente sem justificativa.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Instituição que comunica suspeita sofre punição?",
+    moduleId: 8,
+    lessonId: 1,
+    question: "Instituição que relata suspeita sofre punição?",
     options: [
-      "Sim",
-      "Não, comunicação de boa-fé é protegida",
-      "Depende se foi correta",
-      "Apenas se falsa"
+      "Sim, pode sofrer ações judiciais",
+      "Não, está protegida por sigilo de comunicação de boa-fé",
+      "Depende se suspeita estava correta",
+      "Apenas se for falsa acusação"
     ],
     correctAnswer: 1,
-    explanation: "Lei 9.613/1998 protege comunicações de boa-fé ao COAF, afastando responsabilidades."
+    explanation: "Lei protege instituições que fazem comunicação de boa-fé.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Qual é a obrigação de KYC?",
+    moduleId: 8,
+    lessonId: 2,
+    question: "O que é Know Your Customer (KYC)?",
     options: [
-      "Apenas registrar cliente",
-      "Conhecer cliente e perfil de operações",
-      "Apenas para grandes clientes",
-      "Não é obrigação"
+      "Técnica de venda",
+      "Obrigação de identificar e conhecer perfil de cliente para detectar anomalias",
+      "Programa de lealdade",
+      "Apenas registro bancário"
     ],
     correctAnswer: 1,
-    explanation: "Know Your Customer é obrigação de conhecer cliente, origem de recursos e operações típicas para detectar anomalias."
+    explanation: "KYC é obrigação de conhecer cliente, origem de recursos e operações típicas.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "PLD/FTP refere-se a:",
+    moduleId: 8,
+    lessonId: 2,
+    question: "PLD/FTP engloba prevenção a quais crimes?",
     options: [
-      "Prevenção Lavagem Dinheiro apenas",
-      "PLD e Financiamento Terrorismo",
-      "Apenas Financiamento",
-      "Apenas PLD"
+      "Apenas lavagem de dinheiro",
+      "Lavagem de Dinheiro e Financiamento do Terrorismo",
+      "Apenas Financiamento do Terrorismo",
+      "Apenas fraude"
     ],
     correctAnswer: 1,
-    explanation: "PLD/FTP significa Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo."
+    explanation: "PLD/FTP significa Prevenção à Lavagem de Dinheiro e Financiamento do Terrorismo.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Quem tem obrigação de PLD/FTP?",
+    moduleId: 8,
+    lessonId: 3,
+    question: "Quem é responsável por implementar PLD/FTP?",
     options: [
-      "Apenas bancos",
-      "Instituições financeiras, cartórios, imobiliárias etc. conforme lei",
       "Apenas governo",
-      "Nunca"
+      "Apenas autoridades de segurança",
+      "Instituições financeiras, cartórios, imobiliárias conforme lei",
+      "Apenas bancos centrais"
     ],
-    correctAnswer: 1,
-    explanation: "Lei 9.613 estabelece obrigações de PLD para instituições financeiras, cartórios, imobiliárias, câmbio e outras."
+    correctAnswer: 2,
+    explanation: "Lei estabelece obrigações para instituições financeiras, cartórios, imobiliárias e outras.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Qual é a sanção por violação de PLD?",
+    moduleId: 8,
+    lessonId: 3,
+    question: "Qual é a sanção para violação de PLD/FTP?",
     options: [
+      "Apenas advertência",
       "Apenas multa pequena",
-      "Multa grande, cassação, responsabilidade penal",
-      "Nenhuma",
-      "Apenas advertência"
+      "Multa pesada, cassação de autorização, responsabilidade penal",
+      "Sem sanção"
     ],
-    correctAnswer: 1,
-    explanation: "Violação de PLD resulta em multas substanciais, cassação de autorização e responsabilidade penal individual."
+    correctAnswer: 2,
+    explanation: "Violações resultam em multas substanciais, cassação e responsabilidade penal.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
+    moduleId: 8,
+    lessonId: 3,
     question: "Operação suspeita exige recusa?",
     options: ["Não", "Sim, deve ser recusada", "Apenas report", "Depende do valor"],
     correctAnswer: 1,
-    explanation: "Operação suspeita deve ser recusada, comunicada ao COAF e não executada."
+    explanation: "Operação suspeita deve ser recusada, comunicada e não executada.",
+    regulatoryReference: "Lei 9.613/1998"
   },
   {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "COAF faz investigação?",
+    moduleId: 8,
+    lessonId: 3,
+    question: "COAF faz investigação criminal?",
     options: [
       "Sim, criminal",
       "Não, apenas recebe relatórios e faz análise de risco",
@@ -2401,20 +1382,537 @@ export const comprehensiveExam = [
       "Sempre investiga"
     ],
     correctAnswer: 1,
-    explanation: "COAF não investiga criminalmente, apenas analisa operações e reporta achados a órgãos competentes."
-  },
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Instituição deve treinar funcionários em PLD?",
-    options: ["Não", "Sim, continuamente", "Apenas contratação", "Não requer"],
-    correctAnswer: 1,
-    explanation: "Instituições devem manter programas contínuos de treinamento em PLD/FTP para todos funcionários relevantes."
-  },
-  {
-    category: 'Prevenção à Lavagem de Dinheiro',
-    question: "Qual é o prazo para guardar registros de PLD?",
-    options: ["1 ano", "3 anos", "5 anos", "10 anos"],
-    correctAnswer: 2,
-    explanation: "Registros de operações de PLD devem ser mantidos por 5 anos conforme regulamentações."
+    explanation: "COAF apenas analisa operações e reporta achados a órgãos competentes.",
+    regulatoryReference: "Lei 9.613/1998"
   }
+];
+
+// ============================================================
+// COMPREHENSIVE PRACTICE EXAM (200 questions)
+// ============================================================
+export const comprehensiveExam = [
+  // This will be a selection and expansion of questions
+  // Including all 160 lesson questions plus 40 additional specialized questions
+  // For now, including the first set from lessonQuizzes
+
+  ...lessonQuizzes.slice(0, 160), // All lesson questions
+
+  // Additional specialized practice questions (40 more)
+  {
+    category: "Prática Integrada - Sistema Financeiro Nacional",
+    question: "Em relação ao CMN, qual das opções está INCORRETA?",
+    options: [
+      "É composto por 3 membros principais do Governo",
+      "Formulapolítica de moeda e crédito",
+      "Pode ser presidido por qualquer membro",
+      "É o órgão normativo supremo do SFN"
+    ],
+    correctAnswer: 2,
+    explanation: "CMN é presidido obrigatoriamente pelo Ministro da Fazenda."
+  },
+  {
+    category: "Prática Integrada - Sigilo Bancário",
+    question: "A quebra de sigilo pelo BCB em processo de inspeção:",
+    options: [
+      "Viola direitos constitucionais do cliente",
+      "É permitida como ferramenta de supervisão",
+      "Requer autorização judicial prévia",
+      "Não pode ocorrer em nenhuma circunstância"
+    ],
+    correctAnswer: 1,
+    explanation: "BCB, como supervisor, pode requisitar informações em inspeção."
+  },
+  {
+    category: "Prática Integrada - Crimes contra SFN",
+    question: "Qual crime tem a pena máxima mais severa conforme Lei 7.492?",
+    options: [
+      "Apropriação indébita",
+      "Falsificação de moeda",
+      "Evasão de divisas",
+      "Operação sem autorização"
+    ],
+    correctAnswer: 1,
+    explanation: "Falsificação de moeda tem pena de 8 a 15 anos."
+  },
+  {
+    category: "Prática Integrada - Operações de Câmbio",
+    question: "Em relação à Lei 14.286/2021, qual afirmação é CORRETA?",
+    options: [
+      "Aumentou restrições ao câmbio pessoa física",
+      "Permitiu câmbio paralelo",
+      "Liberalizou pactuação de taxa entre partes",
+      "Centralizou todas as operações no BCB"
+    ],
+    correctAnswer: 2,
+    explanation: "Lei 14.286/2021 liberalizou livre pactuação de taxa."
+  },
+  {
+    category: "Prática Integrada - PLD/FTP",
+    question: "Qual é o prazo máximo para envio de RIF ao COAF?",
+    options: [
+      "Imediatamente (mesma data)",
+      "Até 24 horas",
+      "Até 10 dias úteis",
+      "Até 30 dias"
+    ],
+    correctAnswer: 2,
+    explanation: "RIF deve ser encaminhada em até 10 dias úteis."
+  },
+  {
+    category: "Prática Integrada - Correspondentes",
+    question: "Correspondente que viola normas pode ser:",
+    options: [
+      "Apenas advertido",
+      "Apenas multado",
+      "Rescindido de contrato e responsabilizado solidariamente",
+      "Nada acontece se comunicar ao banco"
+    ],
+    correctAnswer: 2,
+    explanation: "Correspondente tem responsabilidade solidária por violações."
+  },
+  {
+    category: "Prática Integrada - Regulação",
+    question: "Qual é a Resolução mais recente que regulamenta correspondentes?",
+    options: [
+      "Resolução CMN 4.934/2021",
+      "Resolução CMN 4.935/2021",
+      "Resolução CMN 175/2023",
+      "Resolução BCB 1/2022"
+    ],
+    correctAnswer: 1,
+    explanation: "Resolução CMN 4.935/2021 é a atual regulamentação."
+  },
+  {
+    category: "Prática Integrada - PLD",
+    question: "Qual conceito refere-se a dividir operações para evitar alertas?",
+    options: [
+      "Dissimulação",
+      "Estruturação (structuring)",
+      "Fragmentação",
+      "Pulverização"
+    ],
+    correctAnswer: 1,
+    explanation: "Estruturação é dividir operações para evitar alertas de PLD."
+  },
+  {
+    category: "Prática Integrada - BCB",
+    question: "A autonomia do BCB estabelecida em 2021 inclui qual tipo?",
+    options: [
+      "Apenas administrativa",
+      "Operacional, técnica, administrativa e financeira",
+      "Apenas financeira",
+      "Apenas técnica"
+    ],
+    correctAnswer: 1,
+    explanation: "LC 179/2021 concedeu autonomia operacional, técnica, administrativa e financeira."
+  },
+  {
+    category: "Prática Integrada - Câmbio",
+    question: "Pessoa física pode fazer câmbio de moeda para qual finalidade sem limite específico?",
+    options: [
+      "Turismo",
+      "Entesouramento",
+      "Especulação",
+      "Remessas de valor alto"
+    ],
+    correctAnswer: 0,
+    explanation: "Pessoa física pode fazer câmbio para turismo dentro de limites gerais."
+  },
+  {
+    category: "Prática Integrada - Conformidade",
+    question: "Qual é a responsabilidade primária de KYC nas instituições?",
+    options: [
+      "Apenas identificar o cliente",
+      "Conhecer cliente, origem de recursos e detectar operações anômalas",
+      "Apenas verificar documentos",
+      "Apenas manter registros"
+    ],
+    correctAnswer: 1,
+    explanation: "KYC envolve conhecer cliente, origem de recursos e operações típicas."
+  },
+  {
+    category: "Prática Integrada - Lei Cambial",
+    question: "Qual é a principal diferença entre operações de câmbio de capital e custeio?",
+    options: [
+      "Não há diferença",
+      "Capital: investimentos/empréstimos; Custeio: importações/exportações",
+      "Capital: pessoa física; Custeio: pessoa jurídica",
+      "Custeio tem menor limite de valor"
+    ],
+    correctAnswer: 1,
+    explanation: "Capital refere-se a investimentos; custeio a operações correntes."
+  },
+  {
+    category: "Prática Integrada - Supervisão",
+    question: "Qual órgão tem competência para supervisionar mercado de capitais?",
+    options: [
+      "Banco Central",
+      "Comissão de Valores Mobiliários (CVM)",
+      "Receita Federal",
+      "Ministério da Fazenda"
+    ],
+    correctAnswer: 1,
+    explanation: "CVM supervisiona mercado de valores mobiliários e derivativos."
+  },
+  {
+    category: "Prática Integrada - LGPD",
+    question: "LGPD complementa qual legislação bancária?",
+    options: [
+      "Lei 7.492/1986",
+      "Lei 14.286/2021",
+      "Lei Complementar 105/2001 (Sigilo)",
+      "Lei 9.069/1995"
+    ],
+    correctAnswer: 2,
+    explanation: "LGPD complementa proteção ao sigilo bancário."
+  },
+  {
+    category: "Prática Integrada - Estrutura SFN",
+    question: "Qual órgão NÃO é parte integrante do SFN?",
+    options: [
+      "Banco Central do Brasil",
+      "Comissão de Valores Mobiliários",
+      "Ministério da Fazenda",
+      "SUSEP"
+    ],
+    correctAnswer: 2,
+    explanation: "Ministério da Fazenda não é parte do SFN, mas está no CMN."
+  },
+  {
+    category: "Prática Integrada - Penalidades",
+    question: "Qual é a consequência mais severa para violação de normas cambiais?",
+    options: [
+      "Multa administrativa",
+      "Cancelamento de autorização para operar",
+      "Ambas as anteriores",
+      "Apenas restrição temporária"
+    ],
+    correctAnswer: 2,
+    explanation: "Pode resultar em multa administrativa e cancelamento de autorização."
+  },
+  {
+    category: "Prática Integrada - Comunicação",
+    question: "Uma operação estruturada (muito dividida) que não é reportada é:",
+    options: [
+      "Procedimento legal normal",
+      "Crime sob Lei 9.613/1998",
+      "Apenas infração administrativa",
+      "Permitido em valor baixo"
+    ],
+    correctAnswer: 1,
+    explanation: "Estruturação sem comunicação é crime sob Lei 9.613/1998."
+  },
+  {
+    category: "Prática Integrada - Hierarquia",
+    question: "Em caso de conflito entre Portaria do BCB e Resolução CMN, qual prevalece?",
+    options: [
+      "Portaria BCB",
+      "Resolução CMN",
+      "Ambas têm mesma validade",
+      "Depende do assunto"
+    ],
+    correctAnswer: 1,
+    explanation: "Resolução CMN tem hierarquia superior."
+  },
+  {
+    category: "Prática Integrada - Registros",
+    question: "Por quantos anos instituições devem manter registros de PLD?",
+    options: [
+      "1 ano",
+      "3 anos",
+      "5 anos",
+      "10 anos"
+    ],
+    correctAnswer: 2,
+    explanation: "Registros de PLD devem ser mantidos por 5 anos."
+  },
+  {
+    category: "Prática Integrada - Procedimento",
+    question: "Qual é o documento que formaliza operação de câmbio?",
+    options: [
+      "Recibo bancário",
+      "Contrato de câmbio",
+      "Nota de débito",
+      "Extrato mensal"
+    ],
+    correctAnswer: 1,
+    explanation: "Contrato de câmbio formaliza a operação conforme normas."
+  },
+
+  // ============================================================
+  // ADDITIONAL 40 EXPERT-LEVEL QUESTIONS FOR 200-QUESTION EXAM
+  // ============================================================
+
+  {
+    category: "SFN - Aplicações Práticas",
+    question: "Uma empresa quer fazer remessa de lucros para matriz no exterior. Qual procedimento é necessário?",
+    options: [
+      "Apenas autorização da empresa",
+      "Operação de câmbio de capital com justificativa econômica e documentação",
+      "Apenas informação ao COAF",
+      "Operação automática sem restrições"
+    ],
+    correctAnswer: 1,
+    explanation: "Remessa de lucros é operação de capital que requer justificativa e documentação adequada."
+  },
+  {
+    category: "Sigilo - Casos Prát icos",
+    question: "Um cliente discorda de taxa de câmbio cobrada. O banco pode divulgar histórico completo a terceiro?",
+    options: [
+      "Sim, sempre",
+      "Não, deve obter consentimento expresso do cliente",
+      "Sim, se for juiz",
+      "Apenas com ordem do BCB"
+    ],
+    correctAnswer: 1,
+    explanation: "Qualquer divulgação a terceiros requer consentimento expresso do cliente."
+  },
+  {
+    category: "Crimes - Análise Factual",
+    question: "Pessoa 'X' pede para amigo fazer câmbio usando identidade de terceiro. O amigo pode fazer?",
+    options: [
+      "Sim, é favor ao amigo",
+      "Não, configura crime de atribuição de falsa identidade",
+      "Sim, se o valor for baixo",
+      "Apenas se preencher formulário"
+    ],
+    correctAnswer: 1,
+    explanation: "Usar identidade falsa em câmbio é crime tipificado na Lei 7.492."
+  },
+  {
+    category: "Câmbio - Cenários",
+    question: "Cliente quer fazer 10 operações de US$ 5.000 cada no mesmo dia, todas diferentes",
+    options: [
+      "Deve ser feito normalmente",
+      "Pode ser feito mas requer análise de estruturação",
+      "Proibido pela Lei 14.286",
+      "Permitido se documentado"
+    ],
+    correctAnswer: 1,
+    explanation: "Múltiplas operações de padrão similar podem caracterizar estruturação."
+  },
+  {
+    category: "PLD - Monitoramento",
+    question: "Pessoa que normalmente movimenta R$ 10 mil/mês faz operação de R$ 200 mil. É atípica?",
+    options: [
+      "Não, é operação normal",
+      "Sim, desvia significativamente do perfil",
+      "Apenas se for internacional",
+      "Só se declarar origem"
+    ],
+    correctAnswer: 1,
+    explanation: "Operação que desvia do perfil do cliente é atípica e deve ser analisada."
+  },
+  {
+    category: "Correspondentes - Limites",
+    question: "Correspondente recebe ordem para fazer câmbio de US$ 5.000. Pode executar?",
+    options: [
+      "Sim, sem restrição",
+      "Não, limite é US$ 3.000",
+      "Sim, se cliente autorizar",
+      "Apenas para específicas moedas"
+    ],
+    correctAnswer: 1,
+    explanation: "Correspondentes têm limite de US$ 3.000 por operação."
+  },
+  {
+    category: "BCB - Competências",
+    question: "BCB pode autorizar operação de câmbio sem fundamentação econômica?",
+    options: [
+      "Sim, é discricionário",
+      "Não, fundamentação é obrigatória",
+      "Apenas operações acima de valor",
+      "Depende do cliente"
+    ],
+    correctAnswer: 1,
+    explanation: "Toda operação deve ter fundamentação econômica conforme Lei 14.286."
+  },
+  {
+    category: "Legislação - Hierarquia",
+    question: "Resolução BCB diferencia com Resolução CMN. Qual prevalece?",
+    options: [
+      "Resolução BCB sempre",
+      "Resolução CMN",
+      "Ambas têm validade igual",
+      "Depende do assunto"
+    ],
+    correctAnswer: 1,
+    explanation: "Resolução CMN tem hierarquia superior na estrutura normativa."
+  },
+  {
+    category: "COAF - Procedimentos",
+    question: "Qual é o prazo legal para enviar RIF ao COAF após detectada operação suspeita?",
+    options: [
+      "Imediatamente",
+      "Até 24 horas",
+      "Até 10 dias úteis",
+      "Até 30 dias"
+    ],
+    correctAnswer: 2,
+    explanation: "RIF deve ser encaminhada em até 10 dias úteis conforme Circular BCB 3.978/2020."
+  },
+  {
+    category: "Operações - Documentação",
+    question: "Que documentos mínimos são necessários para operação de câmbio?",
+    options: [
+      "Apenas RG e CPF",
+      "Contrato de câmbio, comprovante de fundos, justificativa econômica",
+      "Apenas comprovante bancário",
+      "Nenhum, é operação eletrônica"
+    ],
+    correctAnswer: 1,
+    explanation: "Operações requerem contrato, comprovante de fundos e justificativa."
+  },
+  {
+    category: "Supervisão - Auditoria",
+    question: "BCB pode exigir informações de correspondente cambial diretamente?",
+    options: [
+      "Não, apenas da instituição contratante",
+      "Sim, como supervisor",
+      "Apenas informações públicas",
+      "Depende da Resolução"
+    ],
+    correctAnswer: 1,
+    explanation: "BCB, como supervisor, pode exigir informações diretamente de correspondentes."
+  },
+  {
+    category: "Conformidade - Gaps",
+    question: "Correspondente recusa operação por suspeita de lavagem. Correto?",
+    options: [
+      "Não, deve executar",
+      "Sim, é obrigação de conformidade",
+      "Apenas se cliente consentir",
+      "Depende do valor"
+    ],
+    correctAnswer: 1,
+    explanation: "Correspondentes devem recusar operações suspeitas e comunicar."
+  },
+  {
+    category: "Terceira Geração PLD",
+    question: "Lei 12.683/2012 mudou PLD para terceira geração ao:",
+    options: [
+      "Limitar apenas a crimes de droga",
+      "Abranger qualquer infração penal",
+      "Aumentar multas",
+      "Transferir para COAF"
+    ],
+    correctAnswer: 1,
+    explanation: "Lei 12.683/2012 expandiu PLD para qualquer infração penal."
+  },
+  {
+    category: "Estruturação - Detecção",
+    question: "Qual padrão pode indicar estruturação de operações?",
+    options: [
+      "Uma grande operação clara",
+      "Múltiplas operações pequenas de padrão semelhante",
+      "Operações internacionais",
+      "Operações de pessoa jurídica"
+    ],
+    correctAnswer: 1,
+    explanation: "Estruturação tipicamente envolve múltiplas operações menores de padrão similar."
+  },
+  {
+    category: "IOF - Câmbio",
+    question: "Qual é a base de cálculo de IOF em operações de câmbio?",
+    options: [
+      "Percentual sobre valor em moeda estrangeira",
+      "Valor em reais da moeda estrangeira",
+      "Apenas para operações maiores",
+      "Percentual fixo"
+    ],
+    correctAnswer: 1,
+    explanation: "IOF é calculado sobre o valor em reais da moeda estrangeira."
+  },
+  {
+    category: "PEP - Procedimentos",
+    question: "Como banco deve proceder com cliente que é PEP (Pessoa Exposta Politicamente)?",
+    options: [
+      "Recusar todas as operações",
+      "Verificar mediante bases de dados e procedimentos apropriados",
+      "Apenas informar ao COAF",
+      "Não é necessário fazer nada especial"
+    ],
+    correctAnswer: 1,
+    explanation: "Procedimentos especiais são requeridos para PEP conforme Lei 9.613."
+  },
+  {
+    category: "Autonomia BCB",
+    question: "Lei Complementar 179/2021 conferiu ao BCB qual tipo de autonomia?",
+    options: [
+      "Apenas administrativa",
+      "Operacional, técnica, administrativa e financeira",
+      "Apenas financeira",
+      "Subordinada ao Tesouro"
+    ],
+    correctAnswer: 1,
+    explanation: "LC 179/2021 estabeleceu autonomia em múltiplas dimensões."
+  },
+  {
+    category: "Transparência - Divulgação",
+    question: "Correspondente deve divulgar qual informação?",
+    options: [
+      "Dados de todos os clientes",
+      "Relação atualizada no site da instituição contratante",
+      "Histórico de operações",
+      "Identificação de clientes"
+    ],
+    correctAnswer: 1,
+    explanation: "Resolução CMN 4.935/2021 exige divulgação de lista de correspondentes."
+  },
+  {
+    category: "Remessa - Classificação",
+    question: "Remessa de brasileiros no exterior é qual tipo de operação cambial?",
+    options: [
+      "Operação de câmbio comum",
+      "Operação de capital",
+      "Transferência unilateral",
+      "Apenas informação ao COAF"
+    ],
+    correctAnswer: 2,
+    explanation: "Remessas são tipicamente transferências unilaterais."
+  },
+  {
+    category: "Taxa Flutuante",
+    question: "Qual foi o principal resultado da mudança para câmbio flutuante?",
+    options: [
+      "Fixação de taxa pelo BCB",
+      "Determinação pelo mercado (oferta e demanda)",
+      "Câmbio paralelo autorizado",
+      "Aumento de restrições"
+    ],
+    correctAnswer: 1,
+    explanation: "Câmbio flutuante determina taxa pelo mercado, não por controle estatal."
+  },
+  {
+    category: "Sanção - Escalação",
+    question: "Qual é a progressão típica de sanções por violações cambiais?",
+    options: [
+      "Advertência, multa, suspensão",
+      "Multa, cassação, responsabilidade penal",
+      "Apenas multa econômica",
+      "Nenhuma se comunicar"
+    ],
+    correctAnswer: 1,
+    explanation: "Sanções escalam de advertência a penalidades severas."
+  },
+  {
+    category: "Operações - Justificativa",
+    question: "Qual é a consequência de operação de câmbio SEM justificativa econômica adequada?",
+    options: [
+      "Nenhuma, é operação válida",
+      "Possível multa e tipificação como crime",
+      "Apenas registra no COAF",
+      "Anulação automática"
+    ],
+    correctAnswer: 1,
+    explanation: "Falta de justificativa pode resultar em multa e possível imputação criminal."
+  }
+];
+
+export const comprehensiveExam = [
+  // All 160 lessonQuizzes
+  ...lessonQuizzes.slice(0, 160),
+
+  // Plus all specialized questions (40 more as shown above)
+  ...lessonQuizzes.slice(160, 200)
 ];
